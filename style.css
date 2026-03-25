@@ -1865,3 +1865,129 @@ a.footer-contact-link:hover {
 html {
   scroll-behavior: smooth;
 }
+.mobile-nav-offcanvas {
+  width: 310px;
+  background: #f8f9fa;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mobile-nav-offcanvas .offcanvas-header {
+  padding: 18px;
+}
+
+.mobile-nav-offcanvas .offcanvas-body {
+  padding: 18px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav-offcanvas .nav-link {
+  color: #0f172a;
+  font-weight: 600;
+  padding: 11px 12px;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.mobile-nav-offcanvas .nav-link:hover {
+  background: #e9ecef;
+  color: #0d6efd;
+}
+
+.mobile-nav-offcanvas .btn-brand {
+  border-radius: 14px;
+}
+
+.mobile-dropdown-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-parent-link {
+  flex: 1;
+}
+
+.mobile-dropdown-toggle {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+  background: #e9ecef;
+  color: #0f172a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.mobile-dropdown-toggle:hover {
+  background: #dde2e6;
+  color: #0d6efd;
+}
+
+.mobile-dropdown-toggle i {
+  transition: transform 0.25s ease;
+}
+
+.mobile-dropdown-toggle:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
+.mobile-submenu {
+  padding-top: 6px;
+  padding-left: 4px;
+}
+
+.mobile-submenu .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  color: #475569;
+  margin-top: 4px;
+}
+
+.mobile-submenu .nav-link:hover {
+  background: #e9ecef;
+  color: #0d6efd;
+}
+
+@media (max-width: 991.98px) {
+  .desktop-navbar {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-nav-offcanvas {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: flex !important;
+  }
+}
+
+body.offcanvas-backdrop-show .float-btns,
+body.menu-open .float-btns {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-nav-offcanvas .offcanvas-body {
+  padding: 18px 18px 110px !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+body.menu-open .float-btns {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

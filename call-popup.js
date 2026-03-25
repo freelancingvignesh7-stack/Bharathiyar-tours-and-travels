@@ -1,6 +1,9 @@
 (function () {
   let isUserInteracting = false;
   let interactionTimer = null;
+  let popupCount = 0;
+  const maxPopupShows = 3;
+  let popupInterval = null;
 
   const popupHTML = `
     <div id="globalCallPopup" class="global-call-popup">
@@ -53,7 +56,7 @@
       position:relative;
       width:100%;
       max-width:380px;
-      background:#fff;
+      background:#f8f9fa;
       border-radius:24px;
       padding:30px 24px 24px;
       text-align:center;
@@ -80,7 +83,7 @@
       height:34px;
       border:none;
       border-radius:50%;
-      background:#f1f5f9;
+      background:#e9ecef;
       color:#111827;
       font-size:22px;
       line-height:1;
@@ -92,7 +95,7 @@
     }
 
     .global-popup-close:hover{
-      background:#e2e8f0;
+      background:#dde2e6;
     }
 
     .global-popup-icon{
@@ -154,8 +157,9 @@
   const closeBtn = document.getElementById("globalPopupClose");
 
   function showPopup() {
-    if (!isUserInteracting) {
+    if (!isUserInteracting && popupCount < maxPopupShows && !popup.classList.contains("show")) {
       popup.classList.add("show");
+      popupCount++;
     }
   }
 
@@ -193,7 +197,7 @@
 
       interactionTimer = setTimeout(function () {
         isUserInteracting = false;
-      }, 3000);
+      }, 4000);
     }
   });
 
@@ -203,15 +207,19 @@
 
       interactionTimer = setTimeout(function () {
         isUserInteracting = false;
-      }, 3000);
+      }, 4000);
     }
   });
 
-  setTimeout(showPopup, 2000);
+  setTimeout(showPopup, 5000);
 
-  setInterval(function () {
-    if (!popup.classList.contains("show") && !isUserInteracting) {
+  popupInterval = setInterval(function () {
+    if (!popup.classList.contains("show") && !isUserInteracting && popupCount < maxPopupShows) {
       showPopup();
     }
-  }, 5000);
+
+    if (popupCount >= maxPopupShows) {
+      clearInterval(popupInterval);
+    }
+  }, 15000);
 })();

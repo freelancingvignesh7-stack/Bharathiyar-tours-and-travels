@@ -17,81 +17,161 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="images/Logo.png" alt="Bharathiyar Logo" class="logo-img">
-        <div>
-          <div class="brand-name">Bharathiyar Tours & Travels</div>
-          <div class="brand-sub">Premium Cab & Tour Services</div>
-        </div>
-      </a>
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/Logo.png" alt="Bharathiyar Logo" class="logo-img">
+      <div>
+        <div class="brand-name">Bharathiyar Tours & Travels</div>
+        <div class="brand-sub">Premium Cab & Tour Services</div>
+      </div>
+    </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="toggler-bar"></span>
-        <span class="toggler-bar"></span>
-        <span class="toggler-bar"></span>
-      </button>
+    <!-- MOBILE TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
+    <!-- DESKTOP MENU -->
+    <div class="collapse navbar-collapse desktop-navbar" id="mainNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="tariffs.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Tariffs
-            </a>
-            <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
-              <li>
-                <a class="dropdown-item rounded-3 py-2" href="hourlypackages.html">
-                  <i class="bi bi-clock me-2"></i>Local Hourly Packages
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item rounded-3 py-2" href="onewaydroptaxi.html">
-                  <i class="bi bi-sign-turn-right me-2"></i>One Way Drop Taxi
-                </a>
-              </li>
-            </ul>
-          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="tariffs.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tariffs
+          </a>
+          <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
+            <li>
+              <a class="dropdown-item rounded-3 py-2" href="hourlypackages.html">
+                <i class="bi bi-clock me-2"></i>Local Hourly Packages
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item rounded-3 py-2" href="onewaydroptaxi.html">
+                <i class="bi bi-sign-turn-right me-2"></i>One Way Drop Taxi
+              </a>
+            </li>
+          </ul>
+        </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="tourpackages.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Tour Packages
-            </a>
-            <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
-              <li><a class="dropdown-item rounded-3 py-2" href="onedaytourpackages.html"><span class="pkg-badge">1D</span> One Day</a></li>
-              <li><a class="dropdown-item rounded-3 py-2" href="twodaytourpackages.html"><span class="pkg-badge">2D</span> Two Days</a></li>
-              <li><a class="dropdown-item rounded-3 py-2" href="threedaytourpackages.html"><span class="pkg-badge">3D</span> Three Days</a></li>
-              <li><a class="dropdown-item rounded-3 py-2" href="fourdaytourpackages.html"><span class="pkg-badge">4D</span> Four Days</a></li>
-              <li><a class="dropdown-item rounded-3 py-2" href="fivedaytourpackages.html"><span class="pkg-badge">5D</span> Five Days</a></li>
-              <li><a class="dropdown-item rounded-3 py-2" href="sixdaytourpackages.html"><span class="pkg-badge">6D</span> Six Days</a></li>
-              <li><a class="dropdown-item rounded-3 py-2" href="sevendaytourpackages.html"><span class="pkg-badge">7D</span> Seven Days</a></li>
-            </ul>
-          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="tourpackages.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tour Packages
+          </a>
+          <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
+            <li><a class="dropdown-item rounded-3 py-2" href="onedaytourpackages.html"><span class="pkg-badge">1D</span> One Day</a></li>
+            <li><a class="dropdown-item rounded-3 py-2" href="twodaytourpackages.html"><span class="pkg-badge">2D</span> Two Days</a></li>
+            <li><a class="dropdown-item rounded-3 py-2" href="threedaytourpackages.html"><span class="pkg-badge">3D</span> Three Days</a></li>
+            <li><a class="dropdown-item rounded-3 py-2" href="fourdaytourpackages.html"><span class="pkg-badge">4D</span> Four Days</a></li>
+            <li><a class="dropdown-item rounded-3 py-2" href="fivedaytourpackages.html"><span class="pkg-badge">5D</span> Five Days</a></li>
+            <li><a class="dropdown-item rounded-3 py-2" href="sixdaytourpackages.html"><span class="pkg-badge">6D</span> Six Days</a></li>
+            <li><a class="dropdown-item rounded-3 py-2" href="sevendaytourpackages.html"><span class="pkg-badge">7D</span> Seven Days</a></li>
+          </ul>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="termsandconditions.html">Terms</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="termsandconditions.html">Terms</a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
 
-          <li class="nav-item ms-lg-2 mt-3 mt-lg-0">
-            <a class="btn btn-brand" href="index.html#bookingForm1">
-              <i class="bi bi-whatsapp me-1"></i>Book Now
-            </a>
-          </li>
-        </ul>
+        <li class="nav-item ms-lg-2 mt-3 mt-lg-0">
+          <a class="btn btn-brand" href="index.html#bookingForm1">
+            <i class="bi bi-whatsapp me-1"></i>Book Now
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE OFFCANVAS -->
+<div class="offcanvas offcanvas-start mobile-nav-offcanvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom">
+    <div class="d-flex align-items-center gap-2">
+      <img src="images/Logo.png" alt="Bharathiyar Logo" class="logo-img">
+      <div>
+        <div class="brand-name">Bharathiyar Tours & Travels</div>
+        <div class="brand-sub">Premium Cab & Tour Services</div>
       </div>
     </div>
-  </nav>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav flex-column gap-1">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" data-bs-dismiss="offcanvas">Home</a>
+      </li>
+
+      <!-- MOBILE TARIFFS DROPDOWN -->
+      <li class="nav-item">
+        <div class="mobile-dropdown-wrap">
+          <a class="nav-link mobile-parent-link" href="tariffs.html" data-bs-dismiss="offcanvas">Tariffs</a>
+          <button class="mobile-dropdown-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileTariffsMenu" aria-expanded="false" aria-controls="mobileTariffsMenu">
+            <i class="bi bi-chevron-down"></i>
+          </button>
+        </div>
+
+        <div class="collapse mobile-submenu" id="mobileTariffsMenu">
+          <a class="nav-link ps-4" href="hourlypackages.html" data-bs-dismiss="offcanvas">
+            <i class="bi bi-clock me-2"></i>Local Hourly Packages
+          </a>
+          <a class="nav-link ps-4" href="onewaydroptaxi.html" data-bs-dismiss="offcanvas">
+            <i class="bi bi-sign-turn-right me-2"></i>One Way Drop Taxi
+          </a>
+        </div>
+      </li>
+
+      <!-- MOBILE TOUR PACKAGES DROPDOWN -->
+      <li class="nav-item">
+        <div class="mobile-dropdown-wrap">
+          <a class="nav-link mobile-parent-link" href="tourpackages.html" data-bs-dismiss="offcanvas">Tour Packages</a>
+          <button class="mobile-dropdown-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileTourPackagesMenu" aria-expanded="false" aria-controls="mobileTourPackagesMenu">
+            <i class="bi bi-chevron-down"></i>
+          </button>
+        </div>
+
+        <div class="collapse mobile-submenu" id="mobileTourPackagesMenu">
+          <a class="nav-link ps-4" href="onedaytourpackages.html" data-bs-dismiss="offcanvas"><span class="pkg-badge">1D</span> One Day</a>
+          <a class="nav-link ps-4" href="twodaytourpackages.html" data-bs-dismiss="offcanvas"><span class="pkg-badge">2D</span> Two Days</a>
+          <a class="nav-link ps-4" href="threedaytourpackages.html" data-bs-dismiss="offcanvas"><span class="pkg-badge">3D</span> Three Days</a>
+          <a class="nav-link ps-4" href="fourdaytourpackages.html" data-bs-dismiss="offcanvas"><span class="pkg-badge">4D</span> Four Days</a>
+          <a class="nav-link ps-4" href="fivedaytourpackages.html" data-bs-dismiss="offcanvas"><span class="pkg-badge">5D</span> Five Days</a>
+          <a class="nav-link ps-4" href="sixdaytourpackages.html" data-bs-dismiss="offcanvas"><span class="pkg-badge">6D</span> Six Days</a>
+          <a class="nav-link ps-4" href="sevendaytourpackages.html" data-bs-dismiss="offcanvas"><span class="pkg-badge">7D</span> Seven Days</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="about.html" data-bs-dismiss="offcanvas">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="termsandconditions.html" data-bs-dismiss="offcanvas">Terms</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html" data-bs-dismiss="offcanvas">Contact</a>
+      </li>
+    </ul>
+
+    <a href="index.html#bookingForm1" class="btn btn-brand w-100 mt-4" data-bs-dismiss="offcanvas">
+      <i class="bi bi-whatsapp me-2"></i>Book Now
+    </a>
+  </div>
+</div>
 
   <!-- HERO -->
   <section class="hero">
@@ -610,5 +690,18 @@
 
   <script src="bookingform.js"></script>
   <script src="call-popup.js"></script>
+  <script>
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (mobileMenu) {
+    mobileMenu.addEventListener('show.bs.offcanvas', function () {
+      document.body.classList.add('menu-open');
+    });
+
+    mobileMenu.addEventListener('hidden.bs.offcanvas', function () {
+      document.body.classList.remove('menu-open');
+    });
+  }
+</script>
 </body>
 </html>
