@@ -10,7 +10,7 @@
   --accent: #f4a83a;
   --dark: #0d2b30;
   --text: #2c4a4e;
-  --muted: #7a9fa4;
+  --muted: #7A7A7A;
   --border: rgba(26, 159, 170, 0.15);
   --card-bg: #ffffff;
   --section-alt: #f4fbfb;
@@ -128,10 +128,10 @@ em {
 }
 
 .brand-name {
-  font-family: 'Playfair Display', serif;
+font-family: 'Cinzel', serif;
   font-size: 1rem;
-  font-weight: 700;
-  color: var(--dark);
+  font-weight: 800;
+  color: var(--primary);
   line-height: 1.15;
   white-space: nowrap;
   overflow: hidden;
@@ -140,7 +140,7 @@ em {
 
 .brand-sub {
   font-size: 0.62rem;
-  color: var(--muted);
+  color: #7A7A7A;
   font-weight: 600;
   white-space: nowrap;
   letter-spacing: 0.04em;
@@ -1059,7 +1059,7 @@ em {
    FOOTER
    ============================================================ */
 footer {
-  background: var(--dark);
+  background-color: #3c3d41;
   color: rgba(255,255,255,0.75);
   padding: 56px 0 0;
   overflow: hidden;
@@ -1076,9 +1076,9 @@ footer p {
 }
 
 .footer-brand {
-  font-family: 'Playfair Display', serif;
+font-family: 'Cinzel', serif;
   font-size: 0.98rem;
-  color: #fff;
+  color: var(--primary);
   font-weight: 700;
 }
 

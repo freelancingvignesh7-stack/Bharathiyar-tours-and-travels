@@ -1,9 +1,7 @@
 (function () {
   let isUserInteracting = false;
   let interactionTimer = null;
-  let popupCount = 0;
-  const maxPopupShows = 3;
-  let popupInterval = null;
+
 
   const popupHTML = `
     <div id="globalCallPopup" class="global-call-popup">
@@ -157,9 +155,8 @@
   const closeBtn = document.getElementById("globalPopupClose");
 
   function showPopup() {
-    if (!isUserInteracting && popupCount < maxPopupShows && !popup.classList.contains("show")) {
+    if (!isUserInteracting && !popup.classList.contains("show")) {
       popup.classList.add("show");
-      popupCount++;
     }
   }
 
@@ -213,13 +210,5 @@
 
   setTimeout(showPopup, 5000);
 
-  popupInterval = setInterval(function () {
-    if (!popup.classList.contains("show") && !isUserInteracting && popupCount < maxPopupShows) {
-      showPopup();
-    }
 
-    if (popupCount >= maxPopupShows) {
-      clearInterval(popupInterval);
-    }
-  }, 15000);
 })();
