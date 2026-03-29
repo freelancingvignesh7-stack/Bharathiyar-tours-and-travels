@@ -17,83 +17,109 @@
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-      <img src="images/Logo.png" alt="Bharathiyar Logo" class="logo-img">
-      <div>
-        <div class="brand-name">BHARATHIYAR TOURS AND TRAVELS</div>
-        <div class="brand-sub">Premium Cab & Tour Services</div>
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="images/Logo.png" alt="Bharathiyar Logo" class="logo-img">
+        <div>
+          <div class="brand-name">BHARATHIYAR TOURS AND TRAVELS</div>
+          <div class="brand-sub">Premium Cab & Tour Services</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse desktop-navbar" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="tariffs.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tariffs
+            </a>
+            <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="hourlypackages.html">
+                  <i class="bi bi-clock me-2"></i>Local Hourly Packages
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="onewaydroptaxi.html">
+                  <i class="bi bi-sign-turn-right me-2"></i>One Way Drop Taxi
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="tourpackages.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tour Packages
+            </a>
+            <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#isha-marudhamalai">
+                  <span class="pkg-badge">1D</span> One Day
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-2d">
+                  <span class="pkg-badge">2D</span> Two Days
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-3d">
+                  <span class="pkg-badge">3D</span> Three Days
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-4d">
+                  <span class="pkg-badge">4D</span> Four Days
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-5d">
+                  <span class="pkg-badge">5D</span> Five Days
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-kodaikanal-madurai-6d">
+                  <span class="pkg-badge">6D</span> Six Days
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-kodaikanal-7d">
+                  <span class="pkg-badge">7D</span> Seven Days
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="termsandconditions.html">Terms</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item ms-lg-2 mt-3 mt-lg-0">
+            <a class="btn btn-brand" href="index.html#bookingForm1">
+              <i class="bi bi-whatsapp me-1"></i>Book Now
+            </a>
+          </li>
+        </ul>
       </div>
-    </a>
-
-    <!-- MOBILE TOGGLER -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
-      <span class="toggler-bar"></span>
-      <span class="toggler-bar"></span>
-      <span class="toggler-bar"></span>
-    </button>
-
-    <!-- DESKTOP MENU -->
-    <div class="collapse navbar-collapse desktop-navbar" id="mainNavbar">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="tariffs.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tariffs
-          </a>
-          <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
-            <li>
-              <a class="dropdown-item rounded-3 py-2" href="hourlypackages.html">
-                <i class="bi bi-clock me-2"></i>Local Hourly Packages
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item rounded-3 py-2" href="onewaydroptaxi.html">
-                <i class="bi bi-sign-turn-right me-2"></i>One Way Drop Taxi
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="tourpackages.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tour Packages
-          </a>
-          <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
-            <li><a class="dropdown-item rounded-3 py-2" href="onedaytourpackages.html"><span class="pkg-badge">1D</span> One Day</a></li>
-            <li><a class="dropdown-item rounded-3 py-2" href="twodaytourpackages.html"><span class="pkg-badge">2D</span> Two Days</a></li>
-            <li><a class="dropdown-item rounded-3 py-2" href="threedaytourpackages.html"><span class="pkg-badge">3D</span> Three Days</a></li>
-            <li><a class="dropdown-item rounded-3 py-2" href="fourdaytourpackages.html"><span class="pkg-badge">4D</span> Four Days</a></li>
-            <li><a class="dropdown-item rounded-3 py-2" href="fivedaytourpackages.html"><span class="pkg-badge">5D</span> Five Days</a></li>
-            <li><a class="dropdown-item rounded-3 py-2" href="sixdaytourpackages.html"><span class="pkg-badge">6D</span> Six Days</a></li>
-            <li><a class="dropdown-item rounded-3 py-2" href="sevendaytourpackages.html"><span class="pkg-badge">7D</span> Seven Days</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="termsandconditions.html">Terms</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-
-        <li class="nav-item ms-lg-2 mt-3 mt-lg-0">
-          <a class="btn btn-brand" href="index.html#bookingForm1">
-            <i class="bi bi-whatsapp me-1"></i>Book Now
-          </a>
-        </li>
-      </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <!-- MOBILE OFFCANVAS -->
 <div class="offcanvas offcanvas-start mobile-nav-offcanvas" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
@@ -397,7 +423,7 @@
               <div class="tour-day-badge">1 Day</div>
               <h5>Quick Getaway</h5>
               <p>Refreshing single-day trip to nearby destinations.</p>
-              <a href="onedaytourpackages.html" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
+              <a href="tourpackages.html#isha-marudhamalai" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
             </div>
           </div>
         </div>
@@ -409,7 +435,7 @@
               <div class="tour-day-badge">2 Days</div>
               <h5>Weekend Escape</h5>
               <p>A neat short-stay package perfect for weekends.</p>
-              <a href="twodaytourpackages.html" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
+              <a href="tourpackages.html#ooty-2d" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
             </div>
           </div>
         </div>
@@ -421,7 +447,7 @@
               <div class="tour-day-badge">3 Days</div>
               <h5>Balanced Tour</h5>
               <p>Sightseeing and leisure with enough time to unwind.</p>
-              <a href="threedaytourpackages.html" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
+              <a href="tourpackages.html#ooty-3d" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
             </div>
           </div>
         </div>
@@ -433,7 +459,7 @@
               <div class="tour-day-badge">4 Days</div>
               <h5>Extended Plan</h5>
               <p>Enjoy a relaxed multi-day journey at your pace.</p>
-              <a href="fourdaytourpackages.html" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
+              <a href="tourpackages.html#ooty-4d" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
             </div>
           </div>
         </div>
@@ -445,7 +471,7 @@
               <div class="tour-day-badge popular">5 Days</div>
               <h5>Family Pilgrimage</h5>
               <p>Perfect for long family or temple circuit journeys.</p>
-              <a href="fivedaytourpackages.html" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
+              <a href="tourpackages.html#ooty-5d" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
             </div>
           </div>
         </div>
@@ -457,7 +483,7 @@
               <div class="tour-day-badge">6 Days</div>
               <h5>Extended Holiday</h5>
               <p>Spacious and comfortable extended holiday planning.</p>
-              <a href="sixdaytourpackages.html" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
+              <a href="tourpackages.html#ooty-kodaikanal-madurai-6d" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
             </div>
           </div>
         </div>
@@ -469,7 +495,7 @@
               <div class="tour-day-badge popular">7 Days</div>
               <h5>Full Week Tour</h5>
               <p>The ultimate fully-planned long trip experience.</p>
-              <a href="sevendaytourpackages.html" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
+              <a href="tourpackages.html#ooty-kodaikanal-munnar-7d" class="btn btn-brand-sm w-100 mt-auto">Enquire</a>
             </div>
           </div>
         </div>
