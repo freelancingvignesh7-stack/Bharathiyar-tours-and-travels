@@ -1486,3 +1486,19 @@ document.addEventListener("DOMContentLoaded", function () {
     populateDestinations("Isha + Marudhamalai");
   }
 });
+
+// Floating button hide
+document.addEventListener("DOMContentLoaded", function () {
+  const bookingModalEl = document.getElementById("bookingModal");
+  const floatingBtns = document.getElementById("floatingBtns");
+
+  if (bookingModalEl && floatingBtns) {
+    bookingModalEl.addEventListener("show.bs.modal", function () {
+      floatingBtns.style.display = "none";
+    });
+
+    bookingModalEl.addEventListener("hidden.bs.modal", function () {
+      floatingBtns.style.display = "flex";
+    });
+  }
+});
