@@ -558,7 +558,7 @@ font-family: 'Cinzel', serif;
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px 20px;
-  padding: 0 12px;
+  padding: 0 6px;
 }
 
 .trust-item {
@@ -1990,4 +1990,237 @@ body.menu-open .float-btns {
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+
+  width: 45px;
+  height: 45px;
+  border: none;
+  outline: none;
+
+  background-color: #0f172a;
+  color: #fff;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  display: none; /* hidden by default */
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #1e293b;
+}
+.section-wrap {
+  padding: 40px 0 !important; /* reduce section spacing */
+}
+
+.section-header {
+  margin-bottom: 20px !important;
+}
+
+.section-header h2 {
+  font-size: 1.6rem !important;
+  margin-bottom: 6px !important;
+}
+
+.section-header p {
+  font-size: 0.85rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* ===== CARD ===== */
+
+.tour-card {
+  border-radius: 10px !important;
+}
+
+/* IMAGE smaller */
+.tour-card-img {
+  height: 140px !important;
+  object-fit: cover !important;
+}
+
+/* BODY compact */
+.tour-card-body {
+  padding: 10px 12px !important;
+}
+
+/* DAY BADGE */
+.tour-day-badge {
+  font-size: 11px !important;
+  padding: 3px 8px !important;
+  margin-bottom: 6px !important;
+}
+
+/* TITLE */
+.tour-card-body h5 {
+  font-size: 0.95rem !important;
+  margin-bottom: 4px !important;
+}
+
+/* TEXT */
+.tour-card-body p {
+  font-size: 0.75rem !important;
+  margin-bottom: 8px !important;
+  line-height: 1.3 !important;
+}
+
+/* BUTTON */
+.btn-brand-sm {
+  font-size: 0.75rem !important;
+  padding: 6px !important;
+}
+
+/* ===== GLOBAL SHARP EDGES ===== */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+/* ===== SECTION ===== */
+.section-wrap{
+  padding: 40px 0 !important;
+}
+
+/* ===== HEADER ===== */
+.section-header{
+  margin-bottom: 16px !important;
+}
+
+.section-header .section-tag{
+  margin-bottom: 6px !important;
+  padding: 4px 10px !important;
+  font-size: 11px !important;
+}
+
+.section-header h2{
+  margin-bottom: 6px !important;
+  font-size: 1.4rem !important;
+  line-height: 1.2 !important;
+}
+
+.section-header p{
+  margin-bottom: 0 !important;
+  font-size: 0.85rem !important;
+}
+
+/* ===== FORM CARD ===== */
+.form-card{
+  padding: 14px !important;
+  border-radius: 0 !important;
+}
+
+/* ===== ROW SPACING ===== */
+#bookingForm .row{
+  --bs-gutter-x: 10px !important;
+  --bs-gutter-y: 10px !important;
+}
+
+/* ===== LABEL ===== */
+.form-label{
+  margin-bottom: 4px !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+}
+
+/* ===== INPUT ===== */
+.form-control,
+.form-select{
+  height: 40px !important;
+  min-height: 40px !important;
+  padding: 6px 10px !important;
+  font-size: 0.85rem !important;
+  border-radius: 0 !important;
+}
+
+/* ===== DATETIME ===== */
+input[type="datetime-local"].form-control{
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+/* ===== RADIO ===== */
+.radio-toggle span{
+  height: 38px !important;
+  padding: 6px 10px !important;
+  font-size: 0.82rem !important;
+  border-radius: 0 !important;
+}
+
+/* ===== INNER BOX ===== */
+.inner-box{
+  padding: 10px !important;
+  border-radius: 0 !important;
+}
+
+.inner-box-title{
+  font-size: 0.88rem !important;
+  margin-bottom: 6px !important;
+}
+
+/* ===== CHILD ROW ===== */
+#accommodationDetails .row{
+  --bs-gutter-x: 8px !important;
+  --bs-gutter-y: 8px !important;
+}
+
+/* ===== BUTTON ===== */
+.btn,
+.btn-lg,
+.btn-brand,
+.btn-ghost{
+  height: 40px !important;
+  padding: 6px 14px !important;
+  font-size: 0.85rem !important;
+  border-radius: 0 !important;
+}
+
+/* ===== BUTTON GAP ===== */
+#bookingForm .d-flex{
+  gap: 10px !important;
+}
+
+/* ===== SMALL TEXT ===== */
+.field-hint{
+  font-size: 0.75rem !important;
+  margin-top: 4px !important;
+}
+
+.optional-tag{
+  font-size: 10px !important;
+  padding: 2px 5px !important;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px){
+  .section-wrap{
+    padding: 32px 0 !important;
+  }
+
+  .form-card{
+    padding: 10px !important;
+  }
+
+  #bookingForm .row{
+    --bs-gutter-x: 8px !important;
+    --bs-gutter-y: 8px !important;
+  }
+
+  .form-control,
+  .form-select,
+  .btn{
+    height: 38px !important;
+    font-size: 0.8rem !important;
+  }
+
+  .section-header h2{
+    font-size: 1.2rem !important;
+  }
 }

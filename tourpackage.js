@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "One Day Tour Packages",
       subtitle: "Select your destination",
       destinations: {
-        "Isha + Marudhamalai": {
+        "Isha > Marudhamalai": {
           hash: "isha-marudhamalai",
            kmLimit: 100,
           vehicles: [
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ]
         },
 
-        "Top Slip + Masani Amman Temple": {
+        "Top Slip > Masani Amman Temple": {
            kmLimit: 300,
           hash: "top-slip-masani-amman",
           vehicles: [
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
 
-        "Malampuzha Dam + Guruvayur": {
+        "Malampuzha Dam > Guruvayur": {
           hash: "malampuzha-guruvayur-2d",
            kmLimit: 400,
           vehicles: [
@@ -333,12 +333,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "Ooty": {
           hash: "ooty-3d",
           vehicles: [
-            { ...VEHICLES.sedan, price: 8700 },
-            { ...VEHICLES.ertiga, price: 11000 },
-            { ...VEHICLES.innova, price: 12000 },
+            { ...VEHICLES.sedan, price: 9500 },
+            { ...VEHICLES.ertiga, price: 12000 },
+            { ...VEHICLES.innova, price: 13000 },
             { ...VEHICLES.crysta, price: 16000 },
-            { ...VEHICLES.tt14, price: 17250 },
-            { ...VEHICLES.tt18, price: 18000 },
+            { ...VEHICLES.tt14, price: 18000 },
+            { ...VEHICLES.tt18, price: 21000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -353,12 +353,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "kodaikanal-3d",
            kmLimit: 550,
           vehicles: [
-            { ...VEHICLES.sedan, price: 10800 },
-            { ...VEHICLES.ertiga, price: 13500 },
-            { ...VEHICLES.innova, price: 14500 },
+            { ...VEHICLES.sedan, price: 11500 },
+            { ...VEHICLES.ertiga, price: 14000 },
+            { ...VEHICLES.innova, price: 15500 },
             { ...VEHICLES.crysta, price: 19000 },
-            { ...VEHICLES.tt14, price: 20500 },
-            { ...VEHICLES.tt18, price: 21500 },
+            { ...VEHICLES.tt14, price: 21000 },
+            { ...VEHICLES.tt18, price: 25500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -373,12 +373,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "munnar-3d",
            kmLimit: 550,
           vehicles: [
-            { ...VEHICLES.sedan, price: 11300 },
+            { ...VEHICLES.sedan, price: 12000 },
             { ...VEHICLES.ertiga, price: 14500 },
-            { ...VEHICLES.innova, price: 15500 },
+            { ...VEHICLES.innova, price: 16000 },
             { ...VEHICLES.crysta, price: 19500 },
             { ...VEHICLES.tt14, price: 21500 },
-            { ...VEHICLES.tt18, price: 22500 },
+            { ...VEHICLES.tt18, price: 26000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -393,12 +393,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "wayanad-3d",
            kmLimit: 600,
           vehicles: [
-            { ...VEHICLES.sedan, price: 11500 },
-            { ...VEHICLES.ertiga, price: 15300 },
-            { ...VEHICLES.innova, price: 16300 },
-            { ...VEHICLES.crysta, price: 19900 },
-            { ...VEHICLES.tt14, price: 23000 },
-            { ...VEHICLES.tt18, price: 24000 },
+            { ...VEHICLES.sedan, price: 13000 },
+            { ...VEHICLES.ertiga, price: 15500 },
+            { ...VEHICLES.innova, price: 17000 },
+            { ...VEHICLES.crysta, price: 20500 },
+            { ...VEHICLES.tt14, price: 23500 },
+            { ...VEHICLES.tt18, price: 27500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -410,7 +410,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
 
-        "Valparai + Athirapally": {
+        "Valparai > Athirapally": {
           hash: "valparai-3d",
            kmLimit: 500,
           vehicles: [
@@ -430,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ]
         },
 
-        "Mysore + Coorg": {
+        "Mysore > Coorg": {
           hash: "mysroe-coorg-3d",
            kmLimit: 850,
           vehicles: [
@@ -456,12 +456,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "navagraha-temple-3d",
            kmLimit: 900,
           vehicles: [
-            { ...VEHICLES.sedan, price: 14500 },
-            { ...VEHICLES.ertiga, price: 20300 },
-            { ...VEHICLES.innova, price: 21300 },
-            { ...VEHICLES.crysta, price: 24900 },
-            { ...VEHICLES.tt14, price: 30000 },
-            { ...VEHICLES.tt18, price: 31000 },
+            { ...VEHICLES.sedan, price: 17000 },
+            { ...VEHICLES.ertiga, price: 21000 },
+            { ...VEHICLES.innova, price: 22500 },
+            { ...VEHICLES.crysta, price: 26000 },
+            { ...VEHICLES.tt14, price: 31500 },
+            { ...VEHICLES.tt18, price: 37500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -521,7 +521,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
 
-        "Ooty + Mysore": {
+        "Ooty > Mysore": {
           hash: "ooty-mysore-4d",
                   kmLimit: 700,
           vehicles: [
@@ -542,7 +542,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ]
         },
 
-        "Munnar + Thekkady": {
+        "Munnar > Thekkady": {
           hash: "munnarthekkady-4d",
           kmLimit: 800,
           vehicles: [
@@ -563,7 +563,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ]
         },
 
-        "Coorg + Chikmagalur": {
+        "Coorg > Chikmagalur": {
           hash: "coorgchikmagalur-4d",
           kmLimit: 1100,
           vehicles: [
@@ -584,7 +584,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
         },
 
-        "Coorg + Wayanad": {
+        "Coorg > Wayanad": {
           hash: "Coorgwayanad-4d",
           kmLimit: 900,
           vehicles: [
@@ -605,7 +605,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ]
         },
 
-        "Kodaikanal + Madurai + Rameswaram": {
+        "Kodaikanal > Madurai > Rameswaram": {
           hash: "kodaikanal-madurai-rameswaram-4d",
             kmLimit: 1000,
           vehicles: [
@@ -654,7 +654,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
         },
 
-        "Ooty + Kodaikanal": {
+        "Ooty > Kodaikanal": {
           hash: "ooty-kodaikanal-5d",
           kmLimit: 850,
           vehicles: [
@@ -677,7 +677,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
 
-        "Ooty + Mysore + Bangalore": {
+        "Ooty > Mysore > Bangalore": {
           hash: "ooty-mysore-bangalore-5d",
           kmLimit: 1200,
           vehicles: [
@@ -700,7 +700,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
 
-        "Kodaikanal + Munnar": {
+        "Kodaikanal > Munnar": {
           hash: "kodaikanal-munnar-5d",
           kmLimit: 800,
           vehicles: [
@@ -722,7 +722,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
 
-        "Kodaikanal + Madurai + Rameshwaram": {
+        "Kodaikanal > Madurai > Rameshwaram": {
           hash: "kodaikanal-madurai-rameshwaram-5d",
           kmLimit: 1150,
           vehicles: [
@@ -745,7 +745,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
 
-        "Munnar + Varkala + Alleppey": {
+        "Munnar > Varkala > Alleppey": {
           hash: "munnar-varkala-alleppey-5d",
               kmLimit: 1100,
           vehicles: [
@@ -775,7 +775,7 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Six Day Tour Packages",
       subtitle: "Select your destination",
       destinations: {
-        "Ooty + Kodaikanal + Madurai": {
+        "Ooty > Kodaikanal > Madurai": {
           hash: "ooty-kodaikanal-madurai-6d",
             kmLimit: 1100,
           vehicles: [
@@ -800,7 +800,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-                "Kodaikanal + Ooty + Mysore": {
+                "Kodaikanal > Ooty > Mysore": {
                   hash: "kodaikanal-ooty-mysore-6d",
                   kmLimit: 1200,
                   vehicles: [
@@ -823,7 +823,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   ]
                 },
 
-        "Ooty + Coorg + Mysore + Bangalore": {
+        "Ooty > Coorg > Mysore > Bangalore": {
           hash: "ooty-coorg-mysore-bangalore-6d",
           kmLimit: 1500,
           vehicles: [
@@ -847,7 +847,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
 
-        "Munnar + Alleppey + Varkala + Kovalam + Trivandrum": {
+        "Munnar > Alleppey > Varkala > Kovalam > Trivandrum": {
           hash: "munnar-alleppey-varkala-kovalam-trivandrum-6d",
           kmLimit: 1300,
           vehicles: [
@@ -871,7 +871,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
 
 
-        "Ooty + Wayanad + Coorg": {
+        "Ooty > Wayanad > Coorg": {
           hash: "ooty-wayanad-coorg-6d",
             kmLimit: 1000,
           vehicles: [
@@ -901,7 +901,7 @@ document.addEventListener("DOMContentLoaded", function () {
       subtitle: "Select your destination",
           kmLimit: 1200,
       destinations: {
-        "Ooty + Kodaikanal + Munnar": {
+        "Ooty > Kodaikanal > Munnar": {
           hash: "ooty-kodaikanal-munnar-7d",
           vehicles: [
             { ...VEHICLES.sedan, price: 27000 },
@@ -924,7 +924,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ]
         },
 
-        "Ooty + Kodaikanal + Madurai + Rameswaram": {
+        "Ooty > Kodaikanal > Madurai > Rameswaram": {
           hash: "ooty-kodaikanal-madurai-rameswaram-7d",
               kmLimit: 1400,
           vehicles: [
@@ -948,7 +948,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ]
         },
 
-        "Ooty + Mysore + Coorg + Bangalore": {
+        "Ooty > Mysore > Coorg > Bangalore": {
           hash: "ooty-mysore-coorg-bangalore-7d",
             kmLimit: 1500,
           vehicles: [
@@ -972,7 +972,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ]
         },
 
-        "Kodaikanal + Ooty + Mysore + Bangalore": {
+        "Kodaikanal > Ooty > Mysore > Bangalore": {
           hash: "kodaikanal-ooty-mysore-bangalore-7d",
               kmLimit: 1600,
           vehicles: [
@@ -998,7 +998,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        "Munnar + Thekkady + Alleppey + Varkala + Kovalam": {
+        "Munnar > Thekkady > Alleppey > Varkala > Kovalam": {
           hash: "munnar-thekkady-varkala-alleppey-kovalam-7d",
             kmLimit: 1500,
           vehicles: [
@@ -1322,6 +1322,40 @@ document.addEventListener("DOMContentLoaded", function () {
     renderCurrentView();
   }
 
+  function scrollToTariffOnMobile() {
+  if (window.innerWidth <= 991) {
+    const tariffSection = document.getElementById('tariffSection');
+    if (tariffSection) {
+      setTimeout(() => {
+        const navbarOffset = 90;
+        const top =
+          tariffSection.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
+
+        window.scrollTo({
+          top: top,
+          behavior: 'smooth'
+        });
+      }, 180);
+    }
+  }
+}
+
+document.querySelectorAll('.package-tab').forEach((tab) => {
+  tab.addEventListener('click', function () {
+    document.querySelectorAll('.package-tab').forEach((btn) => {
+      btn.classList.remove('active');
+    });
+
+    this.classList.add('active');
+
+    const selectedPackage = this.dataset.package;
+
+    // your existing package render/update code here
+
+    scrollToTariffOnMobile();
+  });
+});
+
   function openBooking(index) {
     const destinationName = destinationSelect.value;
     const destinationData = getCurrentDestinationData();
@@ -1377,6 +1411,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   destinationSelect.addEventListener("change", function () {
+    accommodationSelect.value = "none"; // reset to without hotel
     renderCurrentView();
   });
 
@@ -1402,6 +1437,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     activePackage = found.pkgKey;
     populateDestinations(found.destinationName);
+    scrollToTariffOnMobile();
   });
 
   bookingPopupForm.addEventListener("submit", function (e) {

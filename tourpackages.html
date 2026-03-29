@@ -83,37 +83,37 @@
             <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2">
               <li>
                 <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#isha-marudhamalai">
-                  <span class="pkg-badge">1D</span> One Day
+                   One Day
                 </a>
               </li>
               <li>
                 <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-2d">
-                  <span class="pkg-badge">2D</span> Two Days
+                   Two Days
                 </a>
               </li>
               <li>
                 <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-3d">
-                  <span class="pkg-badge">3D</span> Three Days
+                   Three Days
                 </a>
               </li>
               <li>
                 <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-4d">
-                  <span class="pkg-badge">4D</span> Four Days
+                   Four Days
                 </a>
               </li>
               <li>
                 <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-5d">
-                  <span class="pkg-badge">5D</span> Five Days
+                   Five Days
                 </a>
               </li>
               <li>
                 <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-kodaikanal-madurai-6d">
-                  <span class="pkg-badge">6D</span> Six Days
+                   Six Days
                 </a>
               </li>
               <li>
                 <a class="dropdown-item rounded-3 py-2" href="tourpackages.html#ooty-kodaikanal-munnar-7d">
-                  <span class="pkg-badge">7D</span> Seven Days
+                   Seven Days
                 </a>
               </li>
             </ul>
@@ -194,13 +194,13 @@
           </button>
 
           <div class="mobile-submenu" id="mobileTourPackagesMenu" style="display: none;">
-            <a class="nav-link ps-4" href="tourpackages.html#isha-marudhamalai" onclick="closeMobileMenu()"><span class="pkg-badge">1D</span> One Day</a>
-            <a class="nav-link ps-4" href="tourpackages.html#ooty-2d" onclick="closeMobileMenu()"><span class="pkg-badge">2D</span> Two Days</a>
-            <a class="nav-link ps-4" href="tourpackages.html#ooty-3d" onclick="closeMobileMenu()"><span class="pkg-badge">3D</span> Three Days</a>
-            <a class="nav-link ps-4" href="tourpackages.html#ooty-4d" onclick="closeMobileMenu()"><span class="pkg-badge">4D</span> Four Days</a>
-            <a class="nav-link ps-4" href="tourpackages.html#ooty-5d" onclick="closeMobileMenu()"><span class="pkg-badge">5D</span> Five Days</a>
-            <a class="nav-link ps-4" href="tourpackages.html#ooty-kodaikanal-madurai-6d" onclick="closeMobileMenu()"><span class="pkg-badge">6D</span> Six Days</a>
-            <a class="nav-link ps-4" href="tourpackages.html#ooty-kodaikanal-munnar-7d" onclick="closeMobileMenu()"><span class="pkg-badge">7D</span> Seven Days</a>
+            <a class="nav-link ps-4" href="tourpackages.html#isha-marudhamalai" onclick="closeMobileMenu()">One Day</a>
+            <a class="nav-link ps-4" href="tourpackages.html#ooty-2d" onclick="closeMobileMenu()"> Two Days</a>
+            <a class="nav-link ps-4" href="tourpackages.html#ooty-3d" onclick="closeMobileMenu()"> Three Days</a>
+            <a class="nav-link ps-4" href="tourpackages.html#ooty-4d" onclick="closeMobileMenu()"> Four Days</a>
+            <a class="nav-link ps-4" href="tourpackages.html#ooty-5d" onclick="closeMobileMenu()"> Five Days</a>
+            <a class="nav-link ps-4" href="tourpackages.html#ooty-kodaikanal-madurai-6d" onclick="closeMobileMenu()"> Six Days</a>
+            <a class="nav-link ps-4" href="tourpackages.html#ooty-kodaikanal-munnar-7d" onclick="closeMobileMenu()"> Seven Days</a>
           </div>
         </li>
 
@@ -245,11 +245,11 @@
               <button type="button" class="package-tab" data-package="4D">Four Days<small>Longer tour</small></button>
               <button type="button" class="package-tab" data-package="5D">Five Days<small>Holiday package</small></button>
               <button type="button" class="package-tab" data-package="6D">Six Days<small>Extended trip</small></button>
-              <button type="button" class="package-tab" data-package="7D">Seven Days<small>Full vacation</small></button>
+              <button type="button"  class="package-tab" data-package="7D">Seven Days<small>Full vacation</small></button>
             </div>
           </div>
 
-          <div class="col-lg-9">
+          <div class="col-lg-9" id="tariffSection">
             <div class="tour-main">
               <div class="tour-topbar">
                 <div>
@@ -321,7 +321,7 @@
     </div>
             </div>
 
-              <div class="tariff-wrap">
+              <div class="tariff-wrap" >
                 <div class="table-responsive">
                   <table class="table tariff-table align-middle mb-0">
                     <thead class="tariff-head">
@@ -350,7 +350,17 @@
                   </table>
                 </div>
               </div>
+              <div class="includes-note">
 
+
+      <div style="margin-top:10px;">
+        <strong>Notes:</strong>
+        <ul style="margin:6px 0 0 18px; padding:0;">
+          <li>Car rent, fuel, driver allowance, parking & toll charges included.</li>
+          <li>Room tariffs are not valid during peak season (Apr–Jun), winter (Nov–Jan), and festival/holiday periods.</li>
+        </ul>
+      </div>
+    </div>
             </div>
           </div>
         </div>
@@ -497,6 +507,9 @@
     </a>
   </div>
 
+  <button id="scrollTopBtn">
+  <i class="bi bi-arrow-up"></i>
+</button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="tourpackage.js" charset="utf-8"></script>
 
@@ -545,7 +558,24 @@ function closeMobileMenu() {
   }
 }
 </script>
+<script>
+const scrollBtn = document.getElementById("scrollTopBtn");
 
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 300) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+});
+
+scrollBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+</script>
 
 </body>
 </html>
