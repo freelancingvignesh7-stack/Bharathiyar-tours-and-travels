@@ -133,9 +133,9 @@ document.addEventListener("DOMContentLoaded", function () {
             { ...VEHICLES.sedan, price: 7500 },
             { ...VEHICLES.ertiga, price: 9000 },
             { ...VEHICLES.innova, price: 10000 },
-            { ...VEHICLES.crysta, price: 7350 },
-            { ...VEHICLES.tt14, price: 8000 },
-            { ...VEHICLES.tt18, price: 10000 },
+            { ...VEHICLES.crysta, price: 12000 },
+            { ...VEHICLES.tt14, price: 15000  },
+            { ...VEHICLES.tt18, price: 17000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
