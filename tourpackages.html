@@ -32,6 +32,18 @@
 .mobile-menu-trigger i{
   transition: transform 0.25s ease !important;
 }
+.hotel-field{
+  display: none;
+}
+
+.hotel-field.show-hotel-field{
+  display: block;
+}
+
+#accommodationFields .form-select{
+  width: 100% !important;
+  min-width: 100% !important;
+}
 </style>
 <body>
 
@@ -123,9 +135,7 @@
             <a class="nav-link" href="about.html">About</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="termsandconditions.html">Terms</a>
-          </li>
+
 
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -208,9 +218,6 @@
           <a class="nav-link" href="about.html">About</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="termsandconditions.html">Terms</a>
-        </li>
 
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -265,54 +272,56 @@
                   <select class="form-select" id="destinationSelect"></select>
                 </div>
 
-                <div id="accommodationFields" class="col-md-8">
-                  <div class="row g-3">
-                    <div class="col-md-3">
-                      <label class="form-label fw-semibold" for="accommodationSelect">Accommodation</label>
-                      <select class="form-select" id="accommodationSelect">
-                        <option value="none">Without Hotel</option>
-                        <option value="hotel">With Hotel</option>
-                      </select>
-                    </div>
+                <div id="accommodationFields" class="col-12">
+                <div class="row g-3">
 
-                    <div class="col-md-3">
-                      <label class="form-label fw-semibold" for="roomTypeSelect">Room Type</label>
-                      <select class="form-select" id="roomTypeSelect">
-                        <option value="2star">2 Star</option>
-                        <option value="3star">3 Star</option>
-                      </select>
-                    </div>
-
-                    <div class="col-md-3">
-                      <label class="form-label fw-semibold" for="occupancySelect">Occupancy</label>
-                      <select class="form-select" id="occupancySelect">
-                        <option value="double">Double</option>
-                        <option value="triple">Triple</option>
-                      </select>
-                    </div>
-
-                    <div class="col-md-3">
-                      <label class="form-label fw-semibold" for="roomCountSelect">Room Count</label>
-                      <select class="form-select" id="roomCountSelect">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                      </select>
-                    </div>
+                  <div class="col-12 col-md-3">
+                    <label class="form-label fw-semibold" for="accommodationSelect">Accommodation</label>
+                    <select class="form-select" id="accommodationSelect">
+                      <option value="none">Without Hotel</option>
+                      <option value="hotel">With Hotel</option>
+                    </select>
                   </div>
+
+                  <div class="col-12 col-md-3 hotel-field" id="roomTypeField">
+                    <label class="form-label fw-semibold" for="roomTypeSelect">Room Type</label>
+                    <select class="form-select" id="roomTypeSelect">
+                      <option value="2star">2 Star</option>
+                      <option value="3star">3 Star</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12 col-md-3 hotel-field" id="occupancyField">
+                    <label class="form-label fw-semibold" for="occupancySelect">Occupancy</label>
+                    <select class="form-select" id="occupancySelect">
+                      <option value="double">Double</option>
+                      <option value="triple">Triple</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12 col-md-3 hotel-field" id="roomCountField">
+                    <label class="form-label fw-semibold" for="roomCountSelect">Room Count</label>
+                    <select class="form-select" id="roomCountSelect">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                    </select>
+                  </div>
+
                 </div>
+              </div>
               </div>
             </div>
 
@@ -412,6 +421,7 @@
     </div>
   </div>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="row g-5">
@@ -456,7 +466,6 @@
             <a href="hourlypackages.html">Hourly Packages</a>
             <a href="tourpackages.html">Tour Packages</a>
             <a href="about.html">About Us</a>
-            <a href="termsandconditions.html">Terms & Conditions</a>
             <a href="contact.html">Contact</a>
           </div>
         </div>
@@ -512,6 +521,8 @@
 </button>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="tourpackage.js" charset="utf-8"></script>
+  <script src="route.js" charset="utf-8"></script>
+<script src="hotel-toggle.js"></script>
 
   <script>
   function toggleTariffMenu() {
