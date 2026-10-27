@@ -1,0 +1,7 @@
+/* Small branch-specific additions; the original website design is retained. */
+.branch-address-block a{line-height:1.8;display:inline-block;max-width:680px}
+.tour-destination-btn{text-align:left}
+.rate-pending-note{font-size:.85rem;color:#64748b;margin:10px 0}
+.booking-action-row button:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:575px){.brand-name{white-space:normal;font-size:.8rem}.tour-main{min-width:0}.tariff-table td{padding:12px 8px}.btn-book-table{white-space:nowrap}}
+@media print{#mainNav,#mobileMenu,footer,.branch-address-block{display:none!important}}

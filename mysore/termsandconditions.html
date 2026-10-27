@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms & Conditions | Mysore — BHARATHIYAR TOURS AND TRAVELS</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  
+
+
+  <style>
+    .float-btns{
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 9999;
+      width: max-content;
+      max-width: calc(100vw - 24px);
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    .float-btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 11px 18px;
+      border-radius: 50px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .float-btn:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.24);
+    }
+
+    .float-btn i{
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .float-call{
+      background: #0d2b30;
+      color: #fff !important;
+    }
+
+    .float-call:hover{
+      background: #1a4a52;
+      color: #fff !important;
+    }
+
+    .float-wa{
+      background: #25D366;
+      color: #fff !important;
+    }
+
+    .float-wa:hover{
+      background: #1ebe5d;
+      color: #fff !important;
+    }
+
+    .mobile-menu-trigger{
+      width: 100% !important;
+      border: none !important;
+      background: transparent !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      text-align: left !important;
+      padding: 11px 12px !important;
+      color: #0f172a !important;
+      font-weight: 600 !important;
+    }
+
+    .mobile-menu-trigger i{
+      transition: transform 0.25s ease !important;
+    }
+
+    .terms-hero{
+      padding: 118px 0 38px;
+      background:
+        linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),
+        url('images/bg.jpg') center/cover no-repeat,
+        linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+    }
+
+    .terms-hero .section-tag{
+      background: rgba(255,255,255,0.14) !important;
+      color: #fff !important;
+      border: 1px solid rgba(255,255,255,0.22) !important;
+    }
+
+    .terms-title{
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: #fff;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    }
+
+    .terms-sub{
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255,255,255,0.80);
+      font-size: 0.96rem;
+      line-height: 1.6;
+    }
+
+    .terms-page{
+      padding: 0 0 60px;
+    }
+
+    .terms-shell{
+      background: #fff;
+      border: 1px solid rgba(26,159,170,0.14);
+      box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+      overflow: hidden;
+    }
+
+    .terms-intro{
+      padding: 22px 22px 10px;
+      border-bottom: 1px solid #e6edf2;
+      background: #fff;
+    }
+
+    .terms-intro h2{
+      margin: 0 0 8px;
+      color: #b91c1c;
+      font-size: 1.9rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .terms-intro p{
+      margin: 0;
+      color: #475569;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .terms-content{
+      padding: 22px;
+    }
+
+    .terms-card{
+      background: #ffffff;
+      border: 1px solid rgba(26,159,170,0.14);
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .terms-card:last-child{
+      margin-bottom: 0;
+    }
+
+    .terms-card h3{
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: #0d2b30;
+    }
+
+    .terms-card p{
+      color: #64748b;
+      font-size: 0.92rem;
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    .terms-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .terms-list li{
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: #334155;
+      font-size: 0.92rem;
+      line-height: 1.75;
+    }
+
+    .terms-list li i{
+      color: #1a9faa;
+      margin-top: 4px;
+      flex-shrink: 0;
+      font-size: 0.95rem;
+    }
+
+    .terms-highlight{
+      margin-top: 18px;
+      padding: 14px 16px;
+      border: 1px solid #d9ecf8;
+      background: #eef8ff;
+      color: #486273;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .terms-highlight strong{
+      color: #243746;
+    }
+
+    .terms-shell,
+    .terms-card,
+    .terms-highlight{
+      border-radius: 0 !important;
+    }
+
+    @media (max-width: 768px){
+      .terms-hero{
+        padding: 100px 0 30px;
+      }
+
+      .terms-intro,
+      .terms-content,
+      .terms-card{
+        padding: 18px;
+      }
+
+      .float-btn{
+        padding: 10px 16px;
+        font-size: 0.82rem;
+      }
+    }
+
+    @media (max-width: 480px){
+      .float-btns{
+        bottom: 16px;
+        gap: 8px;
+      }
+
+      .float-btn{
+        padding: 9px 14px;
+        font-size: 0.78rem;
+        gap: 5px;
+      }
+
+      .float-btn i{
+        font-size: 0.92rem;
+      }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17814686959">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17814686959');
+</script>
+  
+<link rel="stylesheet" href="branch.css">
+</head>
+
+  
+<body>
+
+  <!-- NAVBAR -->
+  <script src="header.js"></script>
+
+  <!-- MOBILE OFFCANVAS -->
+  
+
+  <!-- HERO -->
+  <section class="terms-hero">
+    <div class="container text-center">
+      <div class="section-tag mx-auto mb-2">Terms & Conditions</div>
+      <h1 class="terms-title">Terms, Booking Policy & Travel Conditions</h1>
+      <p class="terms-sub">
+        Please read these terms carefully before confirming your booking with Bharathiyar Tours & Travels.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="terms-page">
+    <div class="container">
+      <div class="terms-shell">
+        <div class="terms-intro">
+          <h2>Terms & Conditions</h2>
+          <p>
+            Welcome to our website. By continuing to browse and use this website, you agree to comply with and be bound by the following terms and conditions of use, which together with our privacy practices govern Bharathiyar Tours & Travels’ relationship with you in relation to this website. The term “Bharathiyar Tours & Travels”, “us”, or “we” refers to the owner of the website, and the term “you” refers to the user, customer, or viewer of the website. :contentReference[oaicite:1]{index=1}
+          </p>
+        </div>
+
+        <div class="terms-content">
+
+      <!-- BOOKING -->
+      <div class="terms-card">
+        <h3>Booking, Payment & Cancellation</h3>
+        <ul class="terms-list">
+          <li><i class="bi bi-check-circle-fill"></i><span>Valid government ID proof (Aadhaar, Driving Licence, Passport, etc.) must be provided before trip start.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Bookings are confirmed only after advance payment is received.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Payment may be collected in stages: advance to confirm, balance during or before trip completion.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>In case of cancellation 48 hours prior, refund may be processed. Within 48 hours, advance is non-refundable.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Refunds (if applicable) will be processed through original payment method, excluding transaction charges.</span></li>
+        </ul>
+      </div>
+
+      <!-- VEHICLE -->
+      <div class="terms-card">
+        <h3>Vehicle & Driver Policy</h3>
+        <ul class="terms-list">
+          <li><i class="bi bi-check-circle-fill"></i><span>Driver and vehicle details will be shared prior to journey.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Vehicle may be replaced with equivalent or upgraded model if required.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Driver allowance may apply for late night travel (10 PM – 6 AM).</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Customers must not board any unknown vehicle without confirmation.</span></li>
+        </ul>
+      </div>
+
+      <!-- LUGGAGE -->
+      <div class="terms-card">
+        <h3>Luggage & Seating</h3>
+        <ul class="terms-list">
+          <li><i class="bi bi-check-circle-fill"></i><span>Luggage capacity varies by vehicle type. Please confirm before booking.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Extra luggage may require vehicle upgrade.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>All passengers including children above 5 years are counted as full seats.</span></li>
+        </ul>
+      </div>
+
+      <!-- TARIFF -->
+      <div class="terms-card">
+        <h3>Tariff & Charges</h3>
+        <ul class="terms-list">
+          <li><i class="bi bi-check-circle-fill"></i><span>Tariff includes fuel, driver allowance, tolls, parking and permit charges unless stated otherwise.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Changes to the agreed itinerary or travel schedule may require a revised quote, confirmed with the customer.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Rates are subject to change due to fuel price or government regulations.</span></li>
+        </ul>
+      </div>
+
+      <!-- TRAVEL -->
+      <div class="terms-card">
+        <h3>Travel Conditions</h3>
+        <ul class="terms-list">
+          <li><i class="bi bi-check-circle-fill"></i><span>AC may be turned off during hill travel or when vehicle safety requires.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Delays due to traffic, weather or road conditions are not under our control.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Itinerary may change based on practical conditions.</span></li>
+        </ul>
+      </div>
+
+      <!-- HOTEL -->
+      <div class="terms-card">
+        <h3>Hotel & Accommodation</h3>
+        <ul class="terms-list">
+          <li><i class="bi bi-check-circle-fill"></i><span>Hotel bookings are subject to availability at time of confirmation.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Similar category hotel will be provided if selected hotel is unavailable.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Hotel policies (check-in/out, food, cancellation) are governed by respective hotel.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Any additional hotel charges must be paid directly by the customer.</span></li>
+        </ul>
+      </div>
+
+      <!-- SAFETY -->
+      <div class="terms-card">
+        <h3>Safety & Responsibility</h3>
+        <ul class="terms-list">
+          <li><i class="bi bi-check-circle-fill"></i><span>Smoking, alcohol and illegal activities inside vehicle are strictly prohibited.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>Customers are responsible for their belongings.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i><span>We are not liable for delays, accidents, or natural events beyond control.</span></li>
+        </ul>
+      </div>
+
+      <!-- JURISDICTION -->
+      <div class="terms-card">
+        <h3>Jurisdiction</h3>
+        <ul class="terms-list">
+          <li><i class="bi bi-check-circle-fill"></i><span>All disputes are subject to Mysore jurisdiction only.</span></li>
+        </ul>
+
+        <div class="terms-highlight">
+          <strong>Note:</strong> By booking with Bharathiyar Tours & Travels, you agree to all the above terms and conditions.
+        </div>
+      </div>
+
+    </div>
+      </div>
+    </div>
+  </section>
+  
+    
+    
+  <!-- FOOTER -->
+  <script src="footer.js"></script>
+
+
+  <!-- FLOATING BUTTONS -->
+  <div class="float-btns" id="floatingContactBtns">
+    <a href="tel:+919629808833" class="float-btn float-call">
+      <i class="bi bi-telephone-fill"></i>
+      <span>Call</span>
+    </a>
+
+    <a href="https://wa.me/919629808833" class="float-btn float-wa" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const nav = document.getElementById('mainNav');
+      if (window.scrollY > 20) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    
+
+    
+
+    
+  </script>
+  
+</body>
+</html>

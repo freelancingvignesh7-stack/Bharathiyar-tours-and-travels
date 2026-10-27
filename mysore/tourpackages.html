@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tour Packages | Mysore — BHARATHIYAR TOURS AND TRAVELS</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tourpackage.css">
+  
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17814686959">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17814686959');
+</script>
+
+<link rel="stylesheet" href="branch.css">
+</head>
+<style>
+.mobile-menu-trigger{
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  text-align: left !important;
+  padding: 11px 12px !important;
+  color: #0f172a !important;
+  font-weight: 600 !important;
+}
+
+.mobile-menu-trigger i{
+  transition: transform 0.25s ease !important;
+}
+.hotel-field{
+  display: none;
+}
+
+.hotel-field.show-hotel-field{
+  display: block;
+}
+
+#accommodationFields .form-select{
+  width: 100% !important;
+  min-width: 100% !important;
+}
+</style>
+<body>
+
+  <!-- NAVBAR -->
+  <script src="header.js"></script>
+
+  <!-- MOBILE OFFCANVAS -->
+  
+
+  <section class="tour-page-hero">
+    <div class="container text-center">
+      <div class="section-tag mx-auto mb-2">Tour Packages</div>
+      <h1 class="tour-page-title">Tour Package Tariffs</h1>
+      <p class="tour-page-sub">Choose your package, destination, hotel type and vehicle.</p>
+    </div>
+  </section>
+
+  <section class="tour-layout" id="tourPackagesSection">
+    <div class="container">
+
+      <div class="package-tabs-container">
+        <div class="package-tabs-header">
+          <div class="package-tabs-title">Package Duration</div>
+          <div class="package-tabs-arrows">
+            <button type="button" id="scrollLeftBtn" aria-label="Scroll left">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button type="button" id="scrollRightBtn" aria-label="Scroll right">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="package-tabs-strip">
+          <div class="package-tabs-scroll" id="packageTabsRow">
+            <button type="button" class="package-tab active" data-package="1D">
+              One Day
+              <small>Quick package</small>
+            </button>
+            <button type="button" class="package-tab" data-package="2D">
+              Two Days
+              <small>Weekend trip</small>
+            </button>
+            <button type="button" class="package-tab" data-package="3D">
+              Three Days
+              <small>Comfort trip</small>
+            </button>
+            <button type="button" class="package-tab" data-package="4D">
+              Four Days
+              <small>Longer tour</small>
+            </button>
+            <button type="button" class="package-tab" data-package="5D">
+              Five Days
+              <small>Holiday plan</small>
+            </button>
+            
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-shell">
+        <div class="row g-0">
+
+          <!-- LEFT SIDEBAR: DESTINATIONS -->
+          <div class="col-lg-3">
+            <div class="tour-sidebar h-100">
+              <div class="tour-sidebar-title">Destinations</div>
+              <div id="destinationSidebar"></div>
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="col-lg-9" id="tariffSection">
+            <div class="tour-main">
+              <div class="tour-topbar">
+                <div>
+                  <h2 class="tour-current-title" id="packageHeading">One Day Tour Packages</h2>
+                  <p id="routeLine">Mysore - Ooty - Mysore</p>
+                  <p class="tour-current-sub" id="packageSubheading">Select your destination</p>
+                </div>
+              </div>
+
+              <div class="tour-filter-card">
+                <div class="row g-3">
+
+
+                  <div id="accommodationFields" class="col-12">
+                    <div class="row g-3">
+
+                      <div class="col-12 col-md-3">
+              <label class="form-label fw-semibold d-block">Accommodation</label>
+
+              <div
+                onkeydown="if(event.key === 'Enter' || event.key === ' '){event.preventDefault();this.click();}" id="hotelSwitch" role="switch" tabindex="0" aria-label="Include accommodation" aria-checked="false"
+                onclick="
+                  window.withHotel = !window.withHotel; this.setAttribute('aria-checked', String(window.withHotel));
+                  this.classList.toggle('active', window.withHotel);
+
+                  if (typeof updateAccommodationVisibility === 'function') updateAccommodationVisibility();
+                  if (typeof updateHotelFields === 'function') updateHotelFields();
+                  if (typeof renderTariffTable === 'function') renderTariffTable();
+                "
+              >
+
+                <!-- NO -->
+                <span id="switchNo">No</span>
+
+                <!-- YES -->
+                <span id="switchYes">Yes</span>
+
+                <!-- KNOB -->
+                <span id="hotelKnob"></span>
+
+              </div>
+            </div>
+
+      <style>
+      /* SWITCH */
+    #hotelSwitch {
+      width: 80px !important;   /* slightly bigger */
+      height: 32px !important;
+      border-radius: 999px !important;
+      background: #dc3545;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      overflow: hidden !important;
+    }
+
+    /* TEXT */
+    #switchNo,
+    #switchYes {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;   /* slightly bigger */
+      font-weight: 600;
+      color: #fff;
+      transition: opacity 0.3s ease;
+    }
+
+    #switchNo {
+      left: 10px;
+    }
+
+    #switchYes {
+      right: 10px;
+      opacity: 0.6;
+    }
+
+    /* KNOB */
+    #hotelKnob {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 27px;     /* bigger knob */
+      height: 27px;
+      border-radius: 50% !important;
+      background: #fff;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.25); /* smoother shadow */
+    }
+
+    /* ACTIVE STATE */
+    #hotelSwitch.active {
+      background: #25D366  !important;
+      box-shadow: 0 3px 10px rgba(37, 211, 102, 0.35);
+    }
+
+    /* MOVE KNOB */
+    #hotelSwitch.active #hotelKnob {
+      left: 50px !important; /* recalculated */
+    }
+
+    /* TEXT VISIBILITY */
+    #hotelSwitch.active #switchYes {
+      opacity: 1 !important;
+    }
+
+    #hotelSwitch.active #switchNo {
+      opacity: 1 !important;
+    }
+      </style>
+
+                      <div class="col-12 col-md-3 hotel-field" id="roomTypeField">
+                        <label class="form-label fw-semibold" for="roomTypeSelect">Room Type</label>
+                        <select class="form-select" id="roomTypeSelect">
+                          <option value="2star">2 Star</option>
+                          <option value="3star">3 Star</option>
+                        </select>
+                      </div>
+
+                      <div class="col-12 col-md-3 hotel-field" id="occupancyField">
+                        <label class="form-label fw-semibold" for="occupancySelect">Occupancy</label>
+                        <select class="form-select" id="occupancySelect">
+                          <option value="double">Double</option>
+                          <option value="triple">Triple</option>
+                        </select>
+                      </div>
+
+                      <div class="col-12 col-md-3 hotel-field" id="roomCountField">
+                        <label class="form-label fw-semibold" for="roomCountSelect">Room Count</label>
+                        <select class="form-select" id="roomCountSelect">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                        </select>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tour-note mt-3">
+    Private round trip from Mysore. Rates are per vehicle. Entry tickets, safaris, meals and accommodation are separate unless explicitly included in your confirmed quote.
+  </div>
+              </div>
+
+              <p class="rate-pending-note">On Request means our team will confirm your fare on WhatsApp. Online payment is available only for a published price. Safari, darshan, activity and attraction access require separate confirmation.</p>
+<!-- TARIFF TABLE -->
+              <div class="tariff-wrap">
+                <table class="tariff-table">
+                  <thead class="tariff-head">
+                    <tr>
+                      <th>Vehicle</th>
+                      <th>Tariff</th>
+                      <th>Book</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tariffTableBody">
+                    <tr>
+                      <td colspan="3" class="text-center py-4">Loading tariffs...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- ITINERARY -->
+              <div class="itinerary-table-wrap">
+                <div class="itinerary-title-bar" id="itineraryTitle">Itinerary</div>
+                <table class="itinerary-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 140px;">Day</th>
+                      <th>Plan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="itineraryContent">
+                    <tr>
+                      <td colspan="2">Loading itinerary...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="tour-note mt-3">
+    Private round trip from Mysore. Rates are per vehicle. Entry tickets, safaris, meals and accommodation are separate unless explicitly included in your confirmed quote.
+  </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade modal-tour" id="bookingModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h5 class="modal-title mb-1">Book Tour Package</h5>
+            <div style="font-size:.88rem; opacity:.92;">Fill details and continue</div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body p-3 p-md-4">
+          <div class="summary-box" id="bookingSummary"></div>
+
+          <form id="bookingPopupForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="customerName">Full Name</label>
+              <input type="text" class="form-control" id="customerName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="customerPhone">Phone Number</label>
+              <input type="tel" class="form-control" id="customerPhone" placeholder="10-digit mobile number" maxlength="10" inputmode="numeric" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="customerDateTime">Pickup Date & Time</label>
+              <input type="datetime-local" class="form-control" id="customerDateTime" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="customerPickup">Pickup Location</label>
+              <input type="text" class="form-control" id="customerPickup" placeholder="Mysore hotel, home or pickup landmark" required>
+            </div>
+
+            <div class="booking-action-row">
+      <button type="button" class="whatsapp-btn-full" id="enquireWhatsappBtn">
+        <i class="bi bi-whatsapp me-2"></i>Enquire on WhatsApp
+      </button>
+
+      <button type="button" class="whatsapp-btn-full" id="bookNowZeroBtn">
+        Book Now @ ₹0
+      </button>
+
+      <button type="button" class="pay-online-btn-full" id="payOnlineBtn">
+        <i class="bi bi-credit-card me-2"></i>Pay Online
+      </button>
+    </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade modal-tour" id="paymentModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h5 class="modal-title mb-1">Payment Summary</h5>
+          <div style="font-size:.88rem; opacity:.92;">Review and choose payment option</div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-3 p-md-4">
+        <div class="summary-box" id="paymentSummaryBox"></div>
+
+        <div class="summary-box mb-3" id="paymentOptionNote"></div>
+
+        <div class="booking-action-stack">
+          <button type="button" class="pay-split-btn" id="advancePaymentBtn"></button>
+          <button type="button" class="pay-full-btn" id="fullPaymentBtn"></button>
+          <button type="button" class="pay-back-btn" id="backToBookingBtn">
+            <i class="bi bi-arrow-left me-2"></i>Back
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+<!-- FOOTER -->
+<script src="footer.js"></script>
+
+
+  <!-- FLOATING BUTTONS -->
+<div class="float-btns" id="floatingBtns">
+    <a href="tel:+919629808833" class="float-btn float-call" aria-label="Call us">
+      <i class="bi bi-telephone-fill"></i>
+      <span>Call Us</span>
+    </a>
+    <a href="https://wa.me/919629808833" target="_blank" class="float-btn float-wa" aria-label="WhatsApp us">
+      <i class="bi bi-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <button id="scrollTopBtn">
+  <i class="bi bi-arrow-up"></i>
+</button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="branch-config.js"></script>
+<script src="rates.js"></script>
+<script src="packages.js"></script>
+<script src="tourpackage.js"></script>
+  
+
+
+  
+  
+<script>
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 300) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+});
+
+scrollBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+</script>
+
+  
+</body>
+</html>
