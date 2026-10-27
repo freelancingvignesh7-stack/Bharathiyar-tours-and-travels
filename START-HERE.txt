@@ -1,0 +1,62 @@
+BHARATHIYAR TRAVELS — COIMBATORE + MYSORE UPGRADE
+
+UPLOAD
+1. Back up the current website.
+2. Upload the CONTENTS of this folder into the existing website root.
+   Keep the mysore folder inside the root; do not upload it beside the root.
+3. Coimbatore: https://bharathiyartravels.com/index.html
+   Mysore:     https://bharathiyartravels.com/mysore/index.html
+4. Refresh the browser cache after replacing the files.
+
+SHARED HEADER / FOOTER
+Coimbatore: header.js and footer.js
+Mysore:     mysore/header.js and mysore/footer.js
+Edit a branch's component once; every HTML page in that branch uses it.
+The components insert markup synchronously and work without a separate fetch.
+The ONLY cross-branch website links are the branch addresses in the footers.
+
+MYSORE PACKAGES AND PRICES
+78 packages: 14 one-day, 14 two-day, 16 three-day, 16 four-day, 18 five-day.
+Routes / itineraries: mysore/packages.js
+Vehicle and room prices: mysore/rates.js
+All vehicle prices are INR per vehicle for the WHOLE package, not per person.
+Replace null with a positive number, e.g. "sedan": 6500 (no thousands commas).
+Each route has its own prices under 1D, 2D, 3D, 4D or 5D.
+Hotel rates are per room per night; total is rate x room count x package nights.
+Hotel rates start null, too. An unpriced vehicle or hotel remains On Request.
+Unpriced packages allow WhatsApp enquiries, with no zero-priced online payments.
+Once the relevant fare is entered, booking and existing payment controls enable.
+Example — the Coorg sedan fare:
+  Find "2D", then "coorg", then change "sedan": null to "sedan": 6500.
+This is only an editing example, not an actual fare recommendation.
+
+MYSORE CONTACT
+Primary / WhatsApp: +91 96298 08833
+Secondary: +91 94883 31952
+Email: bharathiyartravelsofficial@gmail.com
+Address: #201/2/2A, No. 3, Nachanahalli Palya Main Road,
+near Cotton Box Factory, Mysore 570008.
+
+PAYMENT INTEGRATION
+Existing Coimbatore Apps Script and Razorpay integrations are retained.
+Mysore uses the existing TOUR booking endpoint; change only
+mysore/branch-config.js if a separate Apps Script deployment is needed.
+Mysore payload includes branch, origin, returnLocation, companyEmail and sourcePage.
+The Apps Script source is NOT supplied in the original ZIP. Confirm that it
+accepts Mysore package codes / fares, calculates the correct payable amount,
+records the correct branch and validates Razorpay payment signatures.
+Do not put secret keys in the website files.
+Receipts use separate browser-session storage for each branch.
+The original receipt download is HTML; Print supports browser Save as PDF.
+
+BEFORE TAKING BOOKINGS
+Enter approved Mysore prices and check a priced booking through the server.
+Review the suggested routes with the operator, including travel time, temple
+access, seasonal operation, forest-road timings, safari and darshan bookings.
+Bank / UPI details and other existing company information have been retained.
+Confirm the existing GST / bank details and Mysore terms apply to this branch.
+
+VALIDATION
+Automated source, component, route, data and simulated interaction checks run.
+No live booking submissions or payments were made. Rendered browser / device
+checks were unavailable in this environment; inspect mobile and desktop after upload.

@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const WHATSAPP_NUMBER = "919629808833";
   const CALL_NUMBER = "919629808833";
+  const SUPPORT_PHONE = "9629808833";
+  const SUPPORT_EMAIL = "bharathiyartravels.cbe@gmail.com";
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxZcAKgXwH5v0i2atZ4XTbqK0PPofoSzKLZG0TpkciJf0IQkT-vw-Hs01xD_msIMNHR/exec";
 
   const VEHICLES = {
     sedan: { name: "SEDAN", type: "Etios, Dzire - 4 Seater" },
@@ -15,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const HOTEL_RATES = {
     "2star": {
-      "double": 2500,
-      "triple": 3500
+      "double": 3300,
+      "triple": 4000
     },
     "3star": {
-      "double": 3500,
-      "triple": 4500
+      "double": 4500,
+      "triple": 5000
     }
   };
 
@@ -33,12 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "isha-marudhamalai",
            kmLimit: 100,
           vehicles: [
-            { ...VEHICLES.sedan, price: 3000 },
-            { ...VEHICLES.ertiga, price: 3500 },
-            { ...VEHICLES.innova, price: 4000 },
-            { ...VEHICLES.crysta, price: 4800 },
-            { ...VEHICLES.tt14, price: 5500 },
-            { ...VEHICLES.tt18, price: 6500 },
+            { ...VEHICLES.sedan, price: 3300 },
+            { ...VEHICLES.ertiga, price: 3800 },
+            { ...VEHICLES.innova, price: 4300 },
+            { ...VEHICLES.crysta, price: 5000 },
+            { ...VEHICLES.tt14, price: 6000 },
+            { ...VEHICLES.tt18, price: 7000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -51,12 +54,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty",
            kmLimit: 300,
           vehicles: [
-            { ...VEHICLES.sedan, price: 5500 },
-            { ...VEHICLES.ertiga, price: 6700 },
-            { ...VEHICLES.innova, price: 7500 },
-            { ...VEHICLES.crysta, price: 9500 },
-            { ...VEHICLES.tt14, price: 11000 },
-            { ...VEHICLES.tt18, price: 14000 },
+            { ...VEHICLES.sedan, price: 6000 },
+            { ...VEHICLES.ertiga, price: 7000 },
+            { ...VEHICLES.innova, price: 8000 },
+            { ...VEHICLES.crysta, price: 10000 },
+            { ...VEHICLES.tt14, price: 12000 },
+            { ...VEHICLES.tt18, price: 15000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -69,11 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
            kmLimit: 300,
           hash: "top-slip-masani-amman",
           vehicles: [
-            { ...VEHICLES.sedan, price: 5100 },
-            { ...VEHICLES.ertiga, price: 6100 },
+          { ...VEHICLES.sedan, price: 5000 },
+            { ...VEHICLES.ertiga, price: 6000 },
             { ...VEHICLES.innova, price: 7000 },
-            { ...VEHICLES.crysta, price: 8200 },
-            { ...VEHICLES.tt14, price: 9500 },
+            { ...VEHICLES.crysta, price: 8000 },
+            { ...VEHICLES.tt14, price: 9000 },
             { ...VEHICLES.tt18, price: 11000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
@@ -87,12 +90,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "guruvayur",
            kmLimit: 400,
           vehicles: [
-            { ...VEHICLES.sedan, price: 6500 },
-            { ...VEHICLES.ertiga, price: 7800 },
-            { ...VEHICLES.innova, price: 8800 },
-            { ...VEHICLES.crysta, price: 10300 },
-            { ...VEHICLES.tt14, price: 11700 },
-            { ...VEHICLES.tt18, price: 14000 },
+            { ...VEHICLES.sedan, price: 7000 },
+            { ...VEHICLES.ertiga, price: 8500 },
+            { ...VEHICLES.innova, price: 9500 },
+            { ...VEHICLES.crysta, price: 11000 },
+            { ...VEHICLES.tt14, price: 13000 },
+            { ...VEHICLES.tt18, price: 15000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -105,12 +108,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "palani",
            kmLimit: 250,
           vehicles: [
-            { ...VEHICLES.sedan, price: 4500 },
-            { ...VEHICLES.ertiga, price: 5500 },
-            { ...VEHICLES.innova, price: 6100 },
-            { ...VEHICLES.crysta, price: 7350 },
-            { ...VEHICLES.tt14, price: 8000 },
-            { ...VEHICLES.tt18, price: 10000 },
+            { ...VEHICLES.sedan, price: 5000 },
+            { ...VEHICLES.ertiga, price: 6000 },
+            { ...VEHICLES.innova, price: 7000 },
+            { ...VEHICLES.crysta, price: 8000 },
+            { ...VEHICLES.tt14, price: 10000 },
+            { ...VEHICLES.tt18, price: 11000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -130,12 +133,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-2d",
            kmLimit: 350,
           vehicles: [
-            { ...VEHICLES.sedan, price: 7500 },
-            { ...VEHICLES.ertiga, price: 9000 },
-            { ...VEHICLES.innova, price: 10000 },
-            { ...VEHICLES.crysta, price: 12000 },
-            { ...VEHICLES.tt14, price: 15000  },
-            { ...VEHICLES.tt18, price: 17000 },
+            { ...VEHICLES.sedan, price: 8000 },
+            { ...VEHICLES.ertiga, price: 10000 },
+            { ...VEHICLES.innova, price: 11000 },
+            { ...VEHICLES.crysta, price: 13500 },
+            { ...VEHICLES.tt14, price: 16000  },
+            { ...VEHICLES.tt18, price: 18000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -150,12 +153,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "valparai-2d",
            kmLimit: 350,
           vehicles: [
-            { ...VEHICLES.sedan, price: 7400 },
-            { ...VEHICLES.ertiga, price: 9250 },
-            { ...VEHICLES.innova, price: 10000 },
-            { ...VEHICLES.crysta, price: 12100 },
-            { ...VEHICLES.tt14, price: 13800 },
-            { ...VEHICLES.tt18, price: 16600 },
+            { ...VEHICLES.sedan, price: 8000 },
+            { ...VEHICLES.ertiga, price: 10000 },
+            { ...VEHICLES.innova, price: 11000 },
+            { ...VEHICLES.crysta, price: 13500 },
+            { ...VEHICLES.tt14, price: 16000 },
+            { ...VEHICLES.tt18, price: 18000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -170,12 +173,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "kodaikanal-2d",
            kmLimit: 500,
           vehicles: [
-            { ...VEHICLES.sedan, price: 9100 },
-            { ...VEHICLES.ertiga, price: 11400 },
-            { ...VEHICLES.innova, price: 12300 },
-            { ...VEHICLES.crysta, price: 14700 },
-            { ...VEHICLES.tt14, price: 17000 },
-            { ...VEHICLES.tt18, price: 20400 },
+            { ...VEHICLES.sedan, price: 10000 },
+            { ...VEHICLES.ertiga, price: 12000 },
+            { ...VEHICLES.innova, price: 13500 },
+            { ...VEHICLES.crysta, price: 15500 },
+            { ...VEHICLES.tt14, price: 18000 },
+            { ...VEHICLES.tt18, price: 22000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -189,12 +192,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "munnar-2d",
            kmLimit: 500,
           vehicles: [
-            { ...VEHICLES.sedan, price: 9400 },
-            { ...VEHICLES.ertiga, price: 11700 },
-            { ...VEHICLES.innova, price: 12600 },
-            { ...VEHICLES.crysta, price: 15000 },
-            { ...VEHICLES.tt14, price: 17500 },
-            { ...VEHICLES.tt18, price: 20900 },
+            { ...VEHICLES.sedan, price: 10000 },
+            { ...VEHICLES.ertiga, price: 12000 },
+            { ...VEHICLES.innova, price: 13500 },
+            { ...VEHICLES.crysta, price: 16000 },
+            { ...VEHICLES.tt14, price: 19000 },
+            { ...VEHICLES.tt18, price: 23000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -210,11 +213,11 @@ document.addEventListener("DOMContentLoaded", function () {
       hash: "mysore-2d",
        kmLimit: 550,
       vehicles: [
-        { ...VEHICLES.sedan, price: 10600 },
-        { ...VEHICLES.ertiga, price: 13050 },
-        { ...VEHICLES.innova, price: 14000 },
-        { ...VEHICLES.crysta, price: 16500 },
-        { ...VEHICLES.tt14, price: 22900 },
+        { ...VEHICLES.sedan, price: 11000 },
+        { ...VEHICLES.ertiga, price: 13000 },
+        { ...VEHICLES.innova, price: 15000 },
+        { ...VEHICLES.crysta, price: 17000 },
+        { ...VEHICLES.tt14, price: 23000 },
         { ...VEHICLES.tt18, price: 26500 },
         { ...VEHICLES.urbania, price: null },
         { ...VEHICLES.coach, price: null }
@@ -230,12 +233,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "malampuzha-guruvayur-2d",
            kmLimit: 400,
           vehicles: [
-            { ...VEHICLES.sedan, price: 8900 },
-            { ...VEHICLES.ertiga, price: 10900 },
-            { ...VEHICLES.innova, price: 11700 },
-            { ...VEHICLES.crysta, price: 13900 },
-            { ...VEHICLES.tt14, price: 16200 },
-            { ...VEHICLES.tt18, price: 19200 },
+            { ...VEHICLES.sedan, price: 9500 },
+            { ...VEHICLES.ertiga, price: 11500 },
+            { ...VEHICLES.innova, price: 12500 },
+            { ...VEHICLES.crysta, price: 15000 },
+            { ...VEHICLES.tt14, price: 17000 },
+            { ...VEHICLES.tt18, price: 20000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -247,14 +250,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         "Sabarimalai": {
           hash: "sabarimalai-2d",
-           kmLimit: 700,
+           kmLimit: 750,
           vehicles: [
-            { ...VEHICLES.sedan, price: 12600 },
-            { ...VEHICLES.ertiga, price: 15500 },
-            { ...VEHICLES.innova, price: 16600 },
-            { ...VEHICLES.crysta, price: 19400 },
-            { ...VEHICLES.tt14, price: 21600 },
-            { ...VEHICLES.tt18, price: 25800 },
+            { ...VEHICLES.sedan, price: 13500 },
+            { ...VEHICLES.ertiga, price: 16000 },
+            { ...VEHICLES.innova, price: 18000 },
+            { ...VEHICLES.crysta, price: 21000 },
+            { ...VEHICLES.tt14, price: 23000 },
+            { ...VEHICLES.tt18, price: 27000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -268,12 +271,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "rameshwaram-2d",
            kmLimit: 900,
           vehicles: [
-            { ...VEHICLES.sedan, price: 14100 },
-            { ...VEHICLES.ertiga, price: 17600 },
-            { ...VEHICLES.innova, price: 18900 },
-            { ...VEHICLES.crysta, price: 22100 },
-            { ...VEHICLES.tt14, price: 25700 },
-            { ...VEHICLES.tt18, price: 30700 },
+            { ...VEHICLES.sedan, price: 15000 },
+            { ...VEHICLES.ertiga, price: 18000 },
+            { ...VEHICLES.innova, price: 20000 },
+            { ...VEHICLES.crysta, price: 23500 },
+            { ...VEHICLES.tt14, price: 26000 },
+            { ...VEHICLES.tt18, price: 31000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -287,12 +290,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "thiruchendur-2d",
            kmLimit: 900,
           vehicles: [
-            { ...VEHICLES.sedan, price: 13600 },
-            { ...VEHICLES.ertiga, price: 17100 },
-            { ...VEHICLES.innova, price: 18400 },
-            { ...VEHICLES.crysta, price: 21600 },
-            { ...VEHICLES.tt14, price: 24700 },
-            { ...VEHICLES.tt18, price: 29700 },
+            { ...VEHICLES.sedan, price: 15000 },
+            { ...VEHICLES.ertiga, price: 18000 },
+            { ...VEHICLES.innova, price: 20000 },
+            { ...VEHICLES.crysta, price: 23500 },
+            { ...VEHICLES.tt14, price: 26000 },
+            { ...VEHICLES.tt18, price: 31000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -306,12 +309,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "thiruvannamalai-2d",
            kmLimit: 700,
           vehicles: [
-            { ...VEHICLES.sedan, price: 12100 },
-            { ...VEHICLES.ertiga, price: 15000 },
-            { ...VEHICLES.innova, price: 16100 },
-            { ...VEHICLES.crysta, price: 18900 },
-            { ...VEHICLES.tt14, price: 21600 },
-            { ...VEHICLES.tt18, price: 25800 },
+            { ...VEHICLES.sedan, price: 13000 },
+            { ...VEHICLES.ertiga, price: 16000 },
+            { ...VEHICLES.innova, price: 17500 },
+            { ...VEHICLES.crysta, price: 20500 },
+            { ...VEHICLES.tt14, price: 23000 },
+            { ...VEHICLES.tt18, price: 27000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -333,12 +336,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "Ooty": {
           hash: "ooty-3d",
           vehicles: [
-            { ...VEHICLES.sedan, price: 9500 },
-            { ...VEHICLES.ertiga, price: 12000 },
-            { ...VEHICLES.innova, price: 13000 },
-            { ...VEHICLES.crysta, price: 16000 },
-            { ...VEHICLES.tt14, price: 18000 },
-            { ...VEHICLES.tt18, price: 21000 },
+            { ...VEHICLES.sedan, price: 11000 },
+            { ...VEHICLES.ertiga, price: 13000 },
+            { ...VEHICLES.innova, price: 14500 },
+            { ...VEHICLES.crysta, price: 17000 },
+            { ...VEHICLES.tt14, price: 19000 },
+            { ...VEHICLES.tt18, price: 22500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -353,12 +356,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "kodaikanal-3d",
            kmLimit: 550,
           vehicles: [
-            { ...VEHICLES.sedan, price: 11500 },
-            { ...VEHICLES.ertiga, price: 14000 },
-            { ...VEHICLES.innova, price: 15500 },
-            { ...VEHICLES.crysta, price: 19000 },
-            { ...VEHICLES.tt14, price: 21000 },
-            { ...VEHICLES.tt18, price: 25500 },
+            { ...VEHICLES.sedan, price: 12000 },
+            { ...VEHICLES.ertiga, price: 14500 },
+            { ...VEHICLES.innova, price: 16500 },
+            { ...VEHICLES.crysta, price: 19500 },
+            { ...VEHICLES.tt14, price: 22500 },
+            { ...VEHICLES.tt18, price: 26500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -373,12 +376,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "munnar-3d",
            kmLimit: 550,
           vehicles: [
-            { ...VEHICLES.sedan, price: 12000 },
-            { ...VEHICLES.ertiga, price: 14500 },
-            { ...VEHICLES.innova, price: 16000 },
-            { ...VEHICLES.crysta, price: 19500 },
-            { ...VEHICLES.tt14, price: 21500 },
-            { ...VEHICLES.tt18, price: 26000 },
+            { ...VEHICLES.sedan, price: 12500 },
+            { ...VEHICLES.ertiga, price: 15000 },
+            { ...VEHICLES.innova, price: 17000 },
+            { ...VEHICLES.crysta, price: 20000 },
+            { ...VEHICLES.tt14, price: 23000 },
+            { ...VEHICLES.tt18, price: 27000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -393,19 +396,19 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "wayanad-3d",
            kmLimit: 600,
           vehicles: [
-            { ...VEHICLES.sedan, price: 13000 },
-            { ...VEHICLES.ertiga, price: 15500 },
-            { ...VEHICLES.innova, price: 17000 },
-            { ...VEHICLES.crysta, price: 20500 },
-            { ...VEHICLES.tt14, price: 23500 },
-            { ...VEHICLES.tt18, price: 27500 },
+            { ...VEHICLES.sedan, price: 13500 },
+            { ...VEHICLES.ertiga, price: 16000 },
+            { ...VEHICLES.innova, price: 18000 },
+            { ...VEHICLES.crysta, price: 21000 },
+            { ...VEHICLES.tt14, price: 24000 },
+            { ...VEHICLES.tt18, price: 28000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
           itinerary: [
             { day: "Day 1", text: "Coimbatore to Wayanad, Banasura Sagar Dam, Edakkal Cave, Kuruva Island. Stay at Wayanad." },
-            { day: "Day 2", text: "Muthunga Wildlife Sanctuary, Pakshipathalam Pazhassi Tourist place. Stay at Wayanad." },
-            { day: "Day 3", text: "Pookot Lake, Soochipara Waterfalls and back to Coimbatore." }
+            { day: "Day 2", text: "Muthunga Wildlife Sanctuary, Glass Bridge. Stay at Wayanad." },
+            { day: "Day 3", text: "Pookot Lake, Lakkidi View Point and back to Coimbatore." }
           ]
         },
 
@@ -414,12 +417,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "valparai-3d",
            kmLimit: 500,
           vehicles: [
-            { ...VEHICLES.sedan, price: 10900 },
-            { ...VEHICLES.ertiga, price: 13600 },
-            { ...VEHICLES.innova, price: 14700 },
-            { ...VEHICLES.crysta, price: 17800 },
-            { ...VEHICLES.tt14, price: 20500 },
-            { ...VEHICLES.tt18, price: 24600 },
+            { ...VEHICLES.sedan, price: 12000 },
+            { ...VEHICLES.ertiga, price: 14500 },
+            { ...VEHICLES.innova, price: 16000 },
+            { ...VEHICLES.crysta, price: 19000 },
+            { ...VEHICLES.tt14, price: 22500 },
+            { ...VEHICLES.tt18, price: 25500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -434,19 +437,19 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "mysroe-coorg-3d",
            kmLimit: 850,
           vehicles: [
-            { ...VEHICLES.sedan, price: 15200 },
-            { ...VEHICLES.ertiga, price: 18950 },
-            { ...VEHICLES.innova, price: 20400 },
-            { ...VEHICLES.crysta, price: 24200 },
-            { ...VEHICLES.tt14, price: 31300 },
-            { ...VEHICLES.tt18, price: 36800 },
+            { ...VEHICLES.sedan, price: 16000 },
+            { ...VEHICLES.ertiga, price: 19550 },
+            { ...VEHICLES.innova, price: 22000 },
+            { ...VEHICLES.crysta, price: 25500 },
+            { ...VEHICLES.tt14, price: 32500 },
+            { ...VEHICLES.tt18, price: 38000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
           itinerary: [
             { day: "Day 1", text: "Dubare Elephant camp, Golden Temple, Nisargadhama forest" },
             { day: "Day 2", text: "Abbey Falls, Coffer Plant, Raja seat and Mysore Halat." },
-            { day: "Day 3", text: "Mysore zoo, Rail Museum, Mysore Palace, Chamundeshwari Temple, Lalith Mahal Palace and back to Coimbatore" }
+            { day: "Day 3", text: "Mysore zoo, Mysore Palace and back to Coimbatore" }
           ]
         },
 
@@ -456,12 +459,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "navagraha-temple-3d",
            kmLimit: 900,
           vehicles: [
-            { ...VEHICLES.sedan, price: 17000 },
+            { ...VEHICLES.sedan, price: 17500 },
             { ...VEHICLES.ertiga, price: 21000 },
-            { ...VEHICLES.innova, price: 22500 },
-            { ...VEHICLES.crysta, price: 26000 },
-            { ...VEHICLES.tt14, price: 31500 },
-            { ...VEHICLES.tt18, price: 37500 },
+            { ...VEHICLES.innova, price: 23500 },
+            { ...VEHICLES.crysta, price: 27500 },
+            { ...VEHICLES.tt14, price: 32000 },
+            { ...VEHICLES.tt18, price: 37000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -482,20 +485,20 @@ document.addEventListener("DOMContentLoaded", function () {
         "Ooty": {
           hash: "ooty-4d",
           vehicles: [
-            { ...VEHICLES.sedan, price: 12500 },
-            { ...VEHICLES.ertiga, price: 15500 },
-            { ...VEHICLES.innova, price: 16500 },
-            { ...VEHICLES.crysta, price: 20500 },
-            { ...VEHICLES.tt14, price: 23500 },
-            { ...VEHICLES.tt18, price: 28000 },
+            { ...VEHICLES.sedan, price: 13500 },
+            { ...VEHICLES.ertiga, price: 16000 },
+            { ...VEHICLES.innova, price: 17500 },
+            { ...VEHICLES.crysta, price: 21500 },
+            { ...VEHICLES.tt14, price: 24000 },
+            { ...VEHICLES.tt18, price: 28500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
           itinerary: [
-            { day: "Day 1", text: "Coimbatore to Coonoor, Ketti Valley View, MRC Military Camp (Outside View), Sim’s Park, Dolphin’s Nose, Lamb’s Rock, to Ooty, Rose Garden, Lake (Boat House), Thread Garden, Wax Museum. Stay at Ooty." },
+            { day: "Day 1", text: "Coimbatore to Coonoor, Ketti Valley View, MRC Military Camp (Outside View), Sim’s Park, Dolphin’s Nose, Lamb’s Rock, to Ooty, Stay at Ooty." },
             { day: "Day 2", text: "Pine forest, Kamarajar Dam, Tree Garden, 9th Mile Shooting Spot, Pykara Waterfalls, Pykara Dam. Stay at Ooty." },
             { day: "Day 3", text: "Doddabetta Peak, Tea Factory, Botanical Garden. Stay at Ooty." },
-            { day: "Day 4", text: "Ooty to Kotagiri, Catherine waterfalls, Kodanadu viewpoint and back to Coimbatore." }
+            { day: "Day 4", text: "Rose Garden, Lake (Boat House), Thread Garden, Wax Museum and back to Coimbatore." }
           ]
         },
 
@@ -503,12 +506,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "kodaikanal-4d",
           kmLimit: 550,
           vehicles: [
-            { ...VEHICLES.sedan, price: 13000 },
-            { ...VEHICLES.ertiga, price: 16500 },
-            { ...VEHICLES.innova, price: 18000 },
-            { ...VEHICLES.crysta, price: 22000 },
-            { ...VEHICLES.tt14, price: 25000 },
-            { ...VEHICLES.tt18, price: 30000 },
+            { ...VEHICLES.sedan, price: 14500 },
+            { ...VEHICLES.ertiga, price: 17000 },
+            { ...VEHICLES.innova, price: 19000 },
+            { ...VEHICLES.crysta, price: 23000 },
+            { ...VEHICLES.tt14, price: 26000 },
+            { ...VEHICLES.tt18, price: 31000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -525,12 +528,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-mysore-4d",
                   kmLimit: 700,
           vehicles: [
-            { ...VEHICLES.sedan, price: 15500 },
-            { ...VEHICLES.ertiga, price: 19500 },
-            { ...VEHICLES.innova, price: 21000 },
-            { ...VEHICLES.crysta, price: 25500 },
-            { ...VEHICLES.tt14, price: 32000 },
-            { ...VEHICLES.tt18, price: 37500 },
+            { ...VEHICLES.sedan, price: 16500 },
+            { ...VEHICLES.ertiga, price: 20000 },
+            { ...VEHICLES.innova, price: 22000 },
+            { ...VEHICLES.crysta, price: 26000 },
+            { ...VEHICLES.tt14, price: 33500 },
+            { ...VEHICLES.tt18, price: 39500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -546,12 +549,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "munnarthekkady-4d",
           kmLimit: 800,
           vehicles: [
-            { ...VEHICLES.sedan, price: 16500 },
-            { ...VEHICLES.ertiga, price: 20500 },
-            { ...VEHICLES.innova, price: 22500 },
-            { ...VEHICLES.crysta, price: 26500 },
-            { ...VEHICLES.tt14, price: 30000 },
-            { ...VEHICLES.tt18, price: 36000 },
+            { ...VEHICLES.sedan, price: 17500 },
+            { ...VEHICLES.ertiga, price: 21000 },
+            { ...VEHICLES.innova, price: 23500 },
+            { ...VEHICLES.crysta, price: 28000 },
+            { ...VEHICLES.tt14, price: 31500 },
+            { ...VEHICLES.tt18, price: 37500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -567,12 +570,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "coorgchikmagalur-4d",
           kmLimit: 1100,
           vehicles: [
-            { ...VEHICLES.sedan, price: 19700 },
-            { ...VEHICLES.ertiga, price: 24500 },
-            { ...VEHICLES.innova, price: 27000 },
-            { ...VEHICLES.crysta, price: 32000 },
-            { ...VEHICLES.tt14, price: 40000 },
-            { ...VEHICLES.tt18, price: 47000 },
+            { ...VEHICLES.sedan, price: 21000 },
+            { ...VEHICLES.ertiga, price: 25500 },
+            { ...VEHICLES.innova, price: 28500 },
+            { ...VEHICLES.crysta, price: 33500 },
+            { ...VEHICLES.tt14, price: 41500 },
+            { ...VEHICLES.tt18, price: 48500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -588,12 +591,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "Coorgwayanad-4d",
           kmLimit: 900,
           vehicles: [
-            { ...VEHICLES.sedan, price: 18000 },
-            { ...VEHICLES.ertiga, price: 22500 },
-            { ...VEHICLES.innova, price: 24500 },
-            { ...VEHICLES.crysta, price: 29000 },
-            { ...VEHICLES.tt14, price: 36000 },
-            { ...VEHICLES.tt18, price: 42500 },
+            { ...VEHICLES.sedan, price: 19000 },
+            { ...VEHICLES.ertiga, price: 23000 },
+            { ...VEHICLES.innova, price: 25500 },
+            { ...VEHICLES.crysta, price: 30000 },
+            { ...VEHICLES.tt14, price: 37500 },
+            { ...VEHICLES.tt18, price: 44000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -609,12 +612,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "kodaikanal-madurai-rameswaram-4d",
             kmLimit: 1000,
           vehicles: [
-            { ...VEHICLES.sedan, price: 18500 },
-            { ...VEHICLES.ertiga, price: 23000 },
-            { ...VEHICLES.innova, price: 25000 },
-            { ...VEHICLES.crysta, price: 30000 },
-            { ...VEHICLES.tt14, price: 34000 },
-            { ...VEHICLES.tt18, price: 40500 },
+            { ...VEHICLES.sedan, price: 20000 },
+            { ...VEHICLES.ertiga, price: 24000 },
+            { ...VEHICLES.innova, price: 27000 },
+            { ...VEHICLES.crysta, price: 32000 },
+            { ...VEHICLES.tt14, price: 35500 },
+            { ...VEHICLES.tt18, price: 42000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -636,12 +639,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-5d",
             kmLimit: 550,
           vehicles: [
-            { ...VEHICLES.sedan, price: 15500 },
-            { ...VEHICLES.ertiga, price: 19000 },
-            { ...VEHICLES.innova, price: 20500 },
-            { ...VEHICLES.crysta, price: 25500 },
-            { ...VEHICLES.tt14, price: 29000 },
-            { ...VEHICLES.tt18, price: 34500 },
+            { ...VEHICLES.sedan, price: 16500 },
+            { ...VEHICLES.ertiga, price: 19500 },
+            { ...VEHICLES.innova, price: 21500 },
+            { ...VEHICLES.crysta, price: 26500 },
+            { ...VEHICLES.tt14, price: 30000 },
+            { ...VEHICLES.tt18, price: 35500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -656,14 +659,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         "Ooty - Kodaikanal": {
           hash: "ooty-kodaikanal-5d",
-          kmLimit: 850,
+          kmLimit: 800,
           vehicles: [
-            { ...VEHICLES.sedan, price: 19000 },
+            { ...VEHICLES.sedan, price: 19500 },
             { ...VEHICLES.ertiga, price: 23500 },
-            { ...VEHICLES.innova, price: 25500 },
-            { ...VEHICLES.crysta, price: 30500 },
-            { ...VEHICLES.tt14, price: 34500 },
-            { ...VEHICLES.tt18, price: 41500 },
+            { ...VEHICLES.innova, price: 26000 },
+            { ...VEHICLES.crysta, price: 31000 },
+            { ...VEHICLES.tt14, price: 35000 },
+            { ...VEHICLES.tt18, price: 42000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -681,12 +684,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-mysore-bangalore-5d",
           kmLimit: 1200,
           vehicles: [
-            { ...VEHICLES.sedan, price: 23500 },
-            { ...VEHICLES.ertiga, price: 29000 },
-            { ...VEHICLES.innova, price: 31500 },
-            { ...VEHICLES.crysta, price: 37000 },
-            { ...VEHICLES.tt14, price: 45500 },
-            { ...VEHICLES.tt18, price: 54000 },
+            { ...VEHICLES.sedan, price: 24500 },
+            { ...VEHICLES.ertiga, price: 29500 },
+            { ...VEHICLES.innova, price: 33000 },
+            { ...VEHICLES.crysta, price: 38500 },
+            { ...VEHICLES.tt14, price: 47000 },
+            { ...VEHICLES.tt18, price: 55000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -704,12 +707,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "kodaikanal-munnar-5d",
           kmLimit: 800,
           vehicles: [
-            { ...VEHICLES.sedan, price: 18000 },
-            { ...VEHICLES.ertiga, price: 22500 },
-            { ...VEHICLES.innova, price: 24500 },
-            { ...VEHICLES.crysta, price: 29500 },
-            { ...VEHICLES.tt14, price: 33500 },
-            { ...VEHICLES.tt18, price: 40000 },
+            { ...VEHICLES.sedan, price: 19000 },
+            { ...VEHICLES.ertiga, price: 23000 },
+            { ...VEHICLES.innova, price: 25500 },
+            { ...VEHICLES.crysta, price: 30500 },
+            { ...VEHICLES.tt14, price: 34500 },
+            { ...VEHICLES.tt18, price: 41500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -726,12 +729,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "kodaikanal-madurai-rameshwaram-5d",
           kmLimit: 1150,
           vehicles: [
-            { ...VEHICLES.sedan, price: 22500 },
-            { ...VEHICLES.ertiga, price: 28000 },
-            { ...VEHICLES.innova, price: 30000 },
-            { ...VEHICLES.crysta, price: 36000 },
-            { ...VEHICLES.tt14, price: 41000 },
-            { ...VEHICLES.tt18, price: 48500 },
+            { ...VEHICLES.sedan, price: 23500 },
+            { ...VEHICLES.ertiga, price: 28500 },
+            { ...VEHICLES.innova, price: 31500 },
+            { ...VEHICLES.crysta, price: 37500 },
+            { ...VEHICLES.tt14, price: 42000 },
+            { ...VEHICLES.tt18, price: 49500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -749,12 +752,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "munnar-varkala-alleppey-5d",
               kmLimit: 1100,
           vehicles: [
-            { ...VEHICLES.sedan, price: 22000 },
-            { ...VEHICLES.ertiga, price: 27500 },
-            { ...VEHICLES.innova, price: 29500 },
-            { ...VEHICLES.crysta, price: 35000 },
-            { ...VEHICLES.tt14, price: 40000 },
-            { ...VEHICLES.tt18, price: 47500 },
+            { ...VEHICLES.sedan, price: 23000 },
+            { ...VEHICLES.ertiga, price: 28000 },
+            { ...VEHICLES.innova, price: 31000 },
+            { ...VEHICLES.crysta, price: 36500 },
+            { ...VEHICLES.tt14, price: 41000 },
+            { ...VEHICLES.tt18, price: 49000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -779,12 +782,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-kodaikanal-madurai-6d",
             kmLimit: 1100,
           vehicles: [
-            { ...VEHICLES.sedan, price: 24000 },
+            { ...VEHICLES.sedan, price: 24500 },
             { ...VEHICLES.ertiga, price: 29500 },
-            { ...VEHICLES.innova, price: 32000 },
-            { ...VEHICLES.crysta, price: 38000 },
-            { ...VEHICLES.tt14, price: 43500 },
-            { ...VEHICLES.tt18, price: 52000 },
+            { ...VEHICLES.innova, price: 33000 },
+            { ...VEHICLES.crysta, price: 39000 },
+            { ...VEHICLES.tt14, price: 44000 },
+            { ...VEHICLES.tt18, price: 52500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -804,12 +807,12 @@ document.addEventListener("DOMContentLoaded", function () {
                   hash: "kodaikanal-ooty-mysore-6d",
                   kmLimit: 1200,
                   vehicles: [
-                    { ...VEHICLES.sedan, price: 25500 },
-                    { ...VEHICLES.ertiga, price: 32500 },
-                    { ...VEHICLES.innova, price: 34000 },
-                    { ...VEHICLES.crysta, price: 40500 },
-                    { ...VEHICLES.tt14, price: 49000 },
-                    { ...VEHICLES.tt18, price: 58000 },
+                    { ...VEHICLES.sedan, price: 26000 },
+                    { ...VEHICLES.ertiga, price: 32000 },
+                    { ...VEHICLES.innova, price: 35000 },
+                    { ...VEHICLES.crysta, price: 41000 },
+                    { ...VEHICLES.tt14, price: 50000 },
+                    { ...VEHICLES.tt18, price: 59000 },
                     { ...VEHICLES.urbania, price: null },
                     { ...VEHICLES.coach, price: null }
                   ],
@@ -827,12 +830,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-coorg-mysore-bangalore-6d",
           kmLimit: 1500,
           vehicles: [
-            { ...VEHICLES.sedan, price: 28500 },
+            { ...VEHICLES.sedan, price: 29500 },
             { ...VEHICLES.ertiga, price: 35500 },
-            { ...VEHICLES.innova, price: 38500 },
-            { ...VEHICLES.crysta, price: 45500 },
-            { ...VEHICLES.tt14, price: 54500 },
-            { ...VEHICLES.tt18, price: 64500 },
+            { ...VEHICLES.innova, price: 40000 },
+            { ...VEHICLES.crysta, price: 47000 },
+            { ...VEHICLES.tt14, price: 56000 },
+            { ...VEHICLES.tt18, price: 66000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -851,12 +854,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "munnar-alleppey-varkala-kovalam-trivandrum-6d",
           kmLimit: 1300,
           vehicles: [
-            { ...VEHICLES.sedan, price: 25500 },
-            { ...VEHICLES.ertiga, price: 32000 },
-            { ...VEHICLES.innova, price: 34500 },
-            { ...VEHICLES.crysta, price: 41500 },
-            { ...VEHICLES.tt14, price: 47000 },
-            { ...VEHICLES.tt18, price: 56500 },
+            { ...VEHICLES.sedan, price: 27000 },
+            { ...VEHICLES.ertiga, price: 32500 },
+            { ...VEHICLES.innova, price: 36500 },
+            { ...VEHICLES.crysta, price: 43000 },
+            { ...VEHICLES.tt14, price: 48000 },
+            { ...VEHICLES.tt18, price: 58000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -875,12 +878,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-wayanad-coorg-6d",
             kmLimit: 1000,
           vehicles: [
-            { ...VEHICLES.sedan, price: 23000 },
-            { ...VEHICLES.ertiga, price: 28500 },
-            { ...VEHICLES.innova, price: 31000 },
-            { ...VEHICLES.crysta, price: 37000 },
-            { ...VEHICLES.tt14, price: 45500 },
-            { ...VEHICLES.tt18, price: 54000 },
+            { ...VEHICLES.sedan, price: 24000 },
+            { ...VEHICLES.ertiga, price: 29000 },
+            { ...VEHICLES.innova, price: 32000 },
+            { ...VEHICLES.crysta, price: 38000 },
+            { ...VEHICLES.tt14, price: 46500 },
+            { ...VEHICLES.tt18, price: 55000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -904,12 +907,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "Ooty - Kodaikanal - Munnar": {
           hash: "ooty-kodaikanal-munnar-7d",
           vehicles: [
-            { ...VEHICLES.sedan, price: 27000 },
+            { ...VEHICLES.sedan, price: 27500 },
             { ...VEHICLES.ertiga, price: 33500 },
-            { ...VEHICLES.innova, price: 36000 },
-            { ...VEHICLES.crysta, price: 43500 },
-            { ...VEHICLES.tt14, price: 48500 },
-            { ...VEHICLES.tt18, price: 58500 },
+            { ...VEHICLES.innova, price: 37500 },
+            { ...VEHICLES.crysta, price: 44000 },
+            { ...VEHICLES.tt14, price: 50000 },
+            { ...VEHICLES.tt18, price: 59500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -928,12 +931,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-kodaikanal-madurai-rameswaram-7d",
               kmLimit: 1400,
           vehicles: [
-            { ...VEHICLES.sedan, price: 29000 },
-            { ...VEHICLES.ertiga, price: 36000 },
-            { ...VEHICLES.innova, price: 39000 },
-            { ...VEHICLES.crysta, price: 46500 },
-            { ...VEHICLES.tt14, price: 52000 },
-            { ...VEHICLES.tt18, price: 62500 },
+            { ...VEHICLES.sedan, price: 30000 },
+            { ...VEHICLES.ertiga, price: 36500 },
+            { ...VEHICLES.innova, price: 40500 },
+            { ...VEHICLES.crysta, price: 48000 },
+            { ...VEHICLES.tt14, price: 54000 },
+            { ...VEHICLES.tt18, price: 64500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -952,12 +955,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "ooty-mysore-coorg-bangalore-7d",
             kmLimit: 1500,
           vehicles: [
-            { ...VEHICLES.sedan, price: 30000 },
-            { ...VEHICLES.ertiga, price: 37500 },
-            { ...VEHICLES.innova, price: 41000 },
-            { ...VEHICLES.crysta, price: 48000 },
-            { ...VEHICLES.tt14, price: 58000 },
-            { ...VEHICLES.tt18, price: 69000 },
+            { ...VEHICLES.sedan, price: 31500 },
+            { ...VEHICLES.ertiga, price: 38000 },
+            { ...VEHICLES.innova, price: 42500 },
+            { ...VEHICLES.crysta, price: 50000 },
+            { ...VEHICLES.tt14, price: 59000 },
+            { ...VEHICLES.tt18, price: 70500 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -976,12 +979,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "kodaikanal-ooty-mysore-bangalore-7d",
               kmLimit: 1600,
           vehicles: [
-            { ...VEHICLES.sedan, price: 31500 },
-            { ...VEHICLES.ertiga, price: 39000 },
-            { ...VEHICLES.innova, price: 42500 },
-            { ...VEHICLES.crysta, price: 50500 },
-            { ...VEHICLES.tt14, price: 60500 },
-            { ...VEHICLES.tt18, price: 71500 },
+            { ...VEHICLES.sedan, price: 32500 },
+            { ...VEHICLES.ertiga, price: 39500 },
+            { ...VEHICLES.innova, price: 44000 },
+            { ...VEHICLES.crysta, price: 52000 },
+            { ...VEHICLES.tt14, price: 61500 },
+            { ...VEHICLES.tt18, price: 73000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -1002,12 +1005,12 @@ document.addEventListener("DOMContentLoaded", function () {
           hash: "munnar-thekkady-varkala-alleppey-kovalam-7d",
             kmLimit: 1500,
           vehicles: [
-            { ...VEHICLES.sedan, price: 30000 },
+            { ...VEHICLES.sedan, price: 31000 },
             { ...VEHICLES.ertiga, price: 37500 },
-            { ...VEHICLES.innova, price: 40500 },
-            { ...VEHICLES.crysta, price: 48000 },
-            { ...VEHICLES.tt14, price: 55000 },
-            { ...VEHICLES.tt18, price: 65500 },
+            { ...VEHICLES.innova, price: 42000 },
+            { ...VEHICLES.crysta, price: 50000 },
+            { ...VEHICLES.tt14, price: 56000 },
+            { ...VEHICLES.tt18, price: 67000 },
             { ...VEHICLES.urbania, price: null },
             { ...VEHICLES.coach, price: null }
           ],
@@ -1026,96 +1029,77 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  function roundTo50(value) {
-    return Math.round(value / 50) * 50;
-  }
 
-  function buildVehicleList(existingVehicles) {
-    const priceMap = {};
-    existingVehicles.forEach(v => {
-      priceMap[v.name.toUpperCase().trim()] = v.price;
-    });
-
-    const sedanPrice = priceMap["SEDAN"] ?? null;
-    const ertigaPrice = priceMap["ERTIGA"] ?? null;
-    const innovaPrice = priceMap["INNOVA"] ?? null;
-    const crystaPrice = priceMap["INNOVA CRYSTA"] ?? priceMap["INNOVA CRYSTA "] ?? null;
-
-    const tt14Price = existingVehicles.find(v =>
-      (v.type || "").includes("12") || (v.type || "").includes("14")
-    )?.price ?? null;
-
-    const tt18Price = existingVehicles.find(v =>
-      (v.type || "").includes("16") || (v.type || "").includes("18")
-    )?.price ?? null;
-
-    const derivedErtiga =
-      sedanPrice != null
-        ? Math.round((sedanPrice + Math.max(300, sedanPrice * 0.15)) / 50) * 50
-        : null;
-
-    return [
-      { ...VEHICLES.sedan, price: sedanPrice },
-
-      // ✅ THIS IS THE FIX
-      { ...VEHICLES.ertiga, price: ertigaPrice ?? derivedErtiga },
-
-      { ...VEHICLES.innova, price: innovaPrice },
-      { ...VEHICLES.crysta, price: crystaPrice },
-      { ...VEHICLES.tt14, price: tt14Price },
-      { ...VEHICLES.tt18, price: tt18Price },
-      { ...VEHICLES.urbania, price: null },
-      { ...VEHICLES.coach, price: null }
-    ];
-  }
+  window.updateAccommodationVisibility = updateAccommodationVisibility;
+window.updateHotelFields = updateHotelFields;
+window.renderTariffTable = renderTariffTable;
 
 
-  function generatePackageCode(destinationName, kmLimit) {
-  const cleanName = destinationName.replace(/[^a-zA-Z]/g, "");
-  const prefix = cleanName.slice(0, 3).toUpperCase();
-  return `${prefix}-${kmLimit}`;
-}
-
-  function normalizeAllPackageVehicles() {
-    Object.keys(packageData).forEach(pkgKey => {
-      const destinations = packageData[pkgKey]?.destinations || {};
-      Object.keys(destinations).forEach(destinationName => {
-        const destination = destinations[destinationName];
-        destination.vehicles = buildVehicleList(destination.vehicles || []);
-      });
-    });
-  }
-
-  normalizeAllPackageVehicles();
-
-  const occupancySelect = document.getElementById("occupancySelect");
+  const destinationSidebar = document.getElementById("destinationSidebar");
   const packageTabs = document.querySelectorAll(".package-tab");
-  const destinationSelect = document.getElementById("destinationSelect");
   const accommodationSelect = document.getElementById("accommodationSelect");
-  const accommodationFields = document.getElementById("accommodationFields");
   const roomTypeSelect = document.getElementById("roomTypeSelect");
+  const occupancySelect = document.getElementById("occupancySelect");
   const roomCountSelect = document.getElementById("roomCountSelect");
   const tariffTableBody = document.getElementById("tariffTableBody");
   const packageHeading = document.getElementById("packageHeading");
   const packageSubheading = document.getElementById("packageSubheading");
+  const routeLine = document.getElementById("routeLine");
   const itineraryTitle = document.getElementById("itineraryTitle");
   const itineraryContent = document.getElementById("itineraryContent");
+  const tariffSection = document.getElementById("tariffSection");
+
   const bookingSummary = document.getElementById("bookingSummary");
   const bookingPopupForm = document.getElementById("bookingPopupForm");
   const bookingModalEl = document.getElementById("bookingModal");
   const bookingModal = bookingModalEl ? new bootstrap.Modal(bookingModalEl) : null;
 
+  const paymentModalEl = document.getElementById("paymentModal");
+  const paymentModal = paymentModalEl ? new bootstrap.Modal(paymentModalEl) : null;
+  const paymentSummaryBox = document.getElementById("paymentSummaryBox");
+  const paymentOptionNote = document.getElementById("paymentOptionNote");
+
+  const enquireWhatsappBtn = document.getElementById("enquireWhatsappBtn");
+  const bookNowZeroBtn = document.getElementById("bookNowZeroBtn");
+  const payOnlineBtn = document.getElementById("payOnlineBtn");
+  const advancePaymentBtn = document.getElementById("advancePaymentBtn");
+  const fullPaymentBtn = document.getElementById("fullPaymentBtn");
+  const backToBookingBtn = document.getElementById("backToBookingBtn");
+
+  const roomTypeField = document.getElementById("roomTypeField");
+  const occupancyField = document.getElementById("occupancyField");
+  const roomCountField = document.getElementById("roomCountField");
+  const packageTabsRow = document.getElementById("packageTabsRow");
+  const scrollLeftBtn = document.getElementById("scrollLeftBtn");
+  const scrollRightBtn = document.getElementById("scrollRightBtn");
+  const floatingBtns = document.getElementById("floatingBtns");
+
   let activePackage = "1D";
+  let selectedDestinationName = "";
   let selectedBooking = null;
+  let customerFormData = null;
+  let savedBookingId = "";
+  let withHotel = false;
+  window.withHotel = false;
+
+  function sanitizeText(value) {
+    return String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
 
   function formatCurrency(value) {
-    if (value === null || value === undefined || value === "") return "Call for price";
+    if (value === null || value === undefined || value === "") return "On Request";
     return "₹ " + Number(value).toLocaleString("en-IN");
   }
 
   function setMinDateTime() {
     const dateInput = document.getElementById("customerDateTime");
     if (!dateInput) return;
+
     const now = new Date();
     now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
     dateInput.min = now.toISOString().slice(0, 16);
@@ -1125,9 +1109,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const d = new Date(inputValue);
     if (isNaN(d)) return inputValue;
 
-    let day = String(d.getDate()).padStart(2, "0");
-    let month = String(d.getMonth() + 1).padStart(2, "0");
-    let year = d.getFullYear();
+    const day = String(d.getDate()).padStart(2, "0");
+    const month = d.toLocaleString("en-GB", { month: "short" });
+    const year = d.getFullYear();
 
     let hours = d.getHours();
     const minutes = String(d.getMinutes()).padStart(2, "0");
@@ -1135,94 +1119,281 @@ document.addEventListener("DOMContentLoaded", function () {
     hours = hours % 12;
     hours = hours ? hours : 12;
 
-    return `${day}/${month}/${year} ${String(hours).padStart(2, "0")}:${minutes} ${ampm}`;
+    return `${day} ${month} ${year}, ${hours}:${minutes} ${ampm}`;
   }
 
-  function getCurrentDestinationData() {
-    const destinationName = destinationSelect.value;
-    return packageData[activePackage]?.destinations?.[destinationName] || null;
+  function showThankYouPopup() {
+    alert("Thanks for contacting Bharathiyar Tours and Travels. Our concern team will contact you.");
   }
 
-  function getCurrentHashUrl() {
-    const destinationData = getCurrentDestinationData();
-    if (!destinationData) return "tourpackages.html";
-    return `tourpackages.html#${destinationData.hash}`;
+  function getCurrentPackageConfig() {
+    return packageData[activePackage] || null;
+  }
+
+  function getCurrentDestinationConfig() {
+    const pkg = getCurrentPackageConfig();
+    if (!pkg || !pkg.destinations) return null;
+    return pkg.destinations[selectedDestinationName] || null;
+  }
+
+  function isHotelSelected() {
+    return window.withHotel === true;
+  }
+
+  function getPackageNights() {
+    const match = String(activePackage || "").match(/^(\d+)D$/i);
+    if (!match) return 0;
+    const days = Number(match[1]);
+    return days > 1 ? days - 1 : 0;
   }
 
   function getHotelCharge() {
-    const accommodation = accommodationSelect.value;
-    if (accommodation !== "hotel") return 0;
+    if (!isHotelSelected()) return 0;
 
-    const roomType = roomTypeSelect.value;
-    const occupancy = occupancySelect.value;
-    const roomCount = Number(roomCountSelect.value || 1);
+    const roomType = roomTypeSelect?.value || "2star";
+    const occupancy = occupancySelect?.value || "double";
+    const roomCount = Number(roomCountSelect?.value || 1);
+    const nights = getPackageNights();
+    const roomRate = HOTEL_RATES?.[roomType]?.[occupancy] || 0;
 
-    const perRoomCharge = HOTEL_RATES[roomType]?.[occupancy] || 0;
-    return perRoomCharge * roomCount;
+    return roomRate * roomCount * nights;
   }
 
-  function updateHotelFieldState() {
-    const isOneDay = activePackage === "1D";
-    const withHotel = !isOneDay && accommodationSelect.value === "hotel";
-
-    roomTypeSelect.disabled = !withHotel;
-    occupancySelect.disabled = !withHotel;
-    roomCountSelect.disabled = !withHotel;
-  }
-
-  function updateAccommodationVisibility() {
-    const isOneDay = activePackage === "1D";
-
-    if (accommodationFields) {
-      accommodationFields.style.display = isOneDay ? "none" : "contents";
-    }
-
-    if (isOneDay) {
-      accommodationSelect.value = "none";
-      roomTypeSelect.value = "2star";
-      occupancySelect.value = "double";
-      roomCountSelect.value = "1";
-    }
-  }
-
-  function updateHash() {
-    const destinationData = getCurrentDestinationData();
-    if (!destinationData) return;
-
-    const newHash = `#${destinationData.hash}`;
-    if (window.location.hash !== newHash) {
-      history.replaceState(null, "", newHash);
-    }
+  function getRouteLineText(destinationName) {
+    if (!destinationName) return "Coimbatore - Destination - Coimbatore";
+    return `Coimbatore - ${destinationName} - Coimbatore`;
   }
 
   function findByHash(hash) {
-    const cleanHash = String(hash || "").replace("#", "").trim();
+    const cleanHash = String(hash || "").replace(/^#/, "").trim().toLowerCase();
     if (!cleanHash) return null;
 
-    for (const pkgKey of Object.keys(packageData)) {
-      const destinations = packageData[pkgKey].destinations || {};
-      for (const destinationName of Object.keys(destinations)) {
-        if (destinations[destinationName].hash === cleanHash) {
-          return { pkgKey, destinationName };
+    for (const [pkgKey, pkgValue] of Object.entries(packageData)) {
+      const destinations = pkgValue?.destinations || {};
+      for (const [destinationName, destinationData] of Object.entries(destinations)) {
+        if ((destinationData?.hash || "").toLowerCase() === cleanHash) {
+          return { pkgKey, destinationName, destinationData };
         }
       }
     }
-
     return null;
   }
 
-  function setActiveTabUI() {
-    packageTabs.forEach(btn => {
-      btn.classList.toggle("active", btn.dataset.package === activePackage);
+  function updateAccommodationVisibility() {
+    const accommodationFields = document.getElementById("accommodationFields");
+    if (!accommodationFields) return;
+
+    // Hide only for 1 Day
+    if (activePackage === "1D") {
+      accommodationFields.style.display = "none";
+
+      withHotel = false;
+const btnNoHotel = document.getElementById("btnNoHotel");
+const btnYesHotel = document.getElementById("btnYesHotel");
+if (btnNoHotel) btnNoHotel.classList.add("active");
+if (btnYesHotel) btnYesHotel.classList.remove("active");
+      if (roomTypeSelect) roomTypeSelect.value = "2star";
+      if (occupancySelect) occupancySelect.value = "double";
+      if (roomCountSelect) roomCountSelect.value = "1";
+
+      [roomTypeField, occupancyField, roomCountField].forEach(field => {
+        if (!field) return;
+        field.classList.remove("show-hotel-field");
+      });
+
+      return;
+    }
+
+    // Show again for 2D and above
+    accommodationFields.style.display = "";
+
+    const showHotel = isHotelSelected();
+
+    [roomTypeField, occupancyField, roomCountField].forEach(field => {
+      if (!field) return;
+
+      if (showHotel) {
+        field.classList.add("show-hotel-field");
+      } else {
+        field.classList.remove("show-hotel-field");
+      }
+    });
+  }
+
+  function updateHotelFields() {
+    if (!isHotelSelected()) {
+      if (roomTypeSelect) roomTypeSelect.value = "2star";
+      if (occupancySelect) occupancySelect.value = "double";
+      if (roomCountSelect) roomCountSelect.value = "1";
+    }
+  }
+
+  function updateActiveTabUI() {
+    packageTabs.forEach(tab => {
+      tab.classList.toggle("active", tab.dataset.package === activePackage);
+    });
+  }
+
+  function updatePageHeading() {
+    const pkg = getCurrentPackageConfig();
+    const destination = getCurrentDestinationConfig();
+
+    if (packageHeading) {
+      packageHeading.textContent = pkg?.title || "Tour Packages";
+    }
+
+    if (packageSubheading) {
+      packageSubheading.textContent = pkg?.subtitle || "Select your destination";
+    }
+
+    if (routeLine) {
+      routeLine.textContent = getRouteLineText(selectedDestinationName);
+    }
+
+    if (itineraryTitle) {
+      itineraryTitle.textContent = destination ? `${selectedDestinationName} Itinerary` : "Itinerary";
+    }
+  }
+
+  function updateHash(hash) {
+    if (!hash) return;
+    const current = window.location.hash.replace(/^#/, "");
+    if (current === hash) return;
+    history.replaceState(null, "", `#${hash}`);
+  }
+
+  function populateDestinations(preferredDestinationName = "") {
+    const pkg = getCurrentPackageConfig();
+    if (!pkg || !destinationSidebar) return;
+
+    updateActiveTabUI();
+
+    const destinationNames = Object.keys(pkg.destinations || {});
+    if (!destinationNames.length) {
+      destinationSidebar.innerHTML = `<div class="text-muted">No destinations available.</div>`;
+      return;
+    }
+
+    if (preferredDestinationName && pkg.destinations[preferredDestinationName]) {
+      selectedDestinationName = preferredDestinationName;
+    } else if (!pkg.destinations[selectedDestinationName]) {
+      selectedDestinationName = destinationNames[0];
+    }
+
+    destinationSidebar.innerHTML = destinationNames.map(name => {
+      const activeClass = name === selectedDestinationName ? "active" : "";
+      return `
+        <button type="button" class="tour-destination-btn ${activeClass}" data-destination="${sanitizeText(name)}">
+          ${sanitizeText(name)}
+        </button>
+      `;
+    }).join("");
+
+    destinationSidebar.querySelectorAll(".tour-destination-btn").forEach(btn => {
+      btn.addEventListener("click", function () {
+        selectedDestinationName = this.dataset.destination;
+        populateDestinations(selectedDestinationName);
+        renderTariffTable();
+        renderItinerary();
+        updatePageHeading();
+
+        setTimeout(() => {
+          const section = document.getElementById("tariffSection");
+          if (section) {
+            const y = section.getBoundingClientRect().top + window.scrollY - 90;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }
+        }, 50);
+      });
+    });
+
+    updatePageHeading();
+
+    const destination = getCurrentDestinationConfig();
+    if (destination?.hash) {
+      updateHash(destination.hash);
+    }
+  }
+
+  function renderTariffTable() {
+    const pkg = getCurrentPackageConfig();
+    const destination = getCurrentDestinationConfig();
+
+    if (!pkg || !destination || !tariffTableBody) {
+      tariffTableBody.innerHTML = `
+        <tr>
+          <td colspan="3" class="text-center py-4">No tariffs available.</td>
+        </tr>
+      `;
+      return;
+    }
+
+    const hotelSelected = isHotelSelected();
+    const hotelCharge = getHotelCharge();
+
+    tariffTableBody.innerHTML = destination.vehicles.map(vehicle => {
+      const baseFare = vehicle.price;
+      const totalFare = baseFare === null ? null : Number(baseFare) + hotelCharge;
+
+      const bookingData = {
+        packageTitle: pkg.title || "",
+        packageCode: activePackage,
+        destination: selectedDestinationName,
+        destinationHash: destination.hash || "",
+        vehicle: `${vehicle.name} - ${vehicle.type}`,
+        vehicleName: vehicle.name,
+        vehicleType: vehicle.type,
+        tariff: totalFare,
+        kmLimit: destination.kmLimit || pkg.kmLimit || "",
+        withHotel: hotelSelected,
+        roomType: hotelSelected ? (roomTypeSelect?.selectedOptions?.[0]?.text || roomTypeSelect?.value || "") : "",
+        occupancy: hotelSelected ? (occupancySelect?.selectedOptions?.[0]?.text || occupancySelect?.value || "") : "",
+        roomCount: hotelSelected ? Number(roomCountSelect?.value || 1) : 0,
+        hotelCharge: hotelCharge
+      };
+
+      const encodedPayload = encodeURIComponent(JSON.stringify(bookingData));
+
+      return `
+        <tr>
+          <td>
+            <div class="vehicle-name">${sanitizeText(vehicle.name)}</div>
+            <div class="vehicle-type">${sanitizeText(vehicle.type)}</div>
+          </td>
+          <td>
+            ${
+              totalFare === null
+                ? `<div class="dynamic-tariff base-rate">On Request</div>`
+                : `<div class="dynamic-tariff base-rate">${formatCurrency(totalFare)}</div>`
+            }
+          </td>
+          <td>
+            ${
+              totalFare === null
+                ? `<button type="button" class="btn btn-sm btn-dark" onclick="window.location.href='tel:+${CALL_NUMBER}'">Call Us</button>`
+                : `<button type="button" class="btn-book-table" data-booking="${encodedPayload}">BOOK NOW</button>`
+            }
+          </td>
+        </tr>
+      `;
+    }).join("");
+
+    tariffTableBody.querySelectorAll(".btn-book-table").forEach(btn => {
+      btn.addEventListener("click", function () {
+        try {
+          const payload = JSON.parse(decodeURIComponent(this.dataset.booking || ""));
+          openBookingModal(payload);
+        } catch (err) {
+          alert("Unable to open booking modal.");
+        }
+      });
     });
   }
 
   function renderItinerary() {
-    const destinationName = destinationSelect.value;
-    const destinationData = packageData[activePackage]?.destinations?.[destinationName];
+    const destination = getCurrentDestinationConfig();
 
-    if (!destinationData) {
-      itineraryTitle.textContent = "Itinerary";
+    if (!destination || !itineraryContent) {
       itineraryContent.innerHTML = `
         <tr>
           <td colspan="2">No itinerary available.</td>
@@ -1231,273 +1402,470 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    itineraryTitle.textContent = `${destinationName} Itinerary`;
-    itineraryContent.innerHTML = destinationData.itinerary.map(item => `
+    const itinerary = destination.itinerary || [];
+    if (!itinerary.length) {
+      itineraryContent.innerHTML = `
+        <tr>
+          <td colspan="2">No itinerary available.</td>
+        </tr>
+      `;
+      return;
+    }
+
+    itineraryContent.innerHTML = itinerary.map(item => `
       <tr>
-        <td><strong>${item.day}</strong></td>
-        <td>${item.text}</td>
+        <td>${sanitizeText(item.day || "")}</td>
+        <td>${sanitizeText(item.text || "")}</td>
       </tr>
     `).join("");
   }
 
-  function renderTariffTable() {
-    const destinationData = getCurrentDestinationData();
+  function openBookingModal(bookingData) {
+    selectedBooking = bookingData;
+    customerFormData = null;
+    savedBookingId = "";
 
-    if (!destinationData) {
-      tariffTableBody.innerHTML = `
-        <tr>
-          <td colspan="3" class="text-center py-4">No tariffs found.</td>
-        </tr>
-      `;
-      return;
-    }
-
-    const hotelCharge = getHotelCharge();
-
-    tariffTableBody.innerHTML = destinationData.vehicles.map((vehicle, index) => {
-      const unavailable =
-        vehicle.price === null ||
-        vehicle.price === undefined ||
-        vehicle.price === "";
-
-      const finalPrice = unavailable ? null : Number(vehicle.price) + hotelCharge;
-
-      return `
-        <tr>
-          <td>
-            <div class="vehicle-name">${vehicle.name}</div>
-            <div class="vehicle-type">${vehicle.type}</div>
-          </td>
-          <td>
-            <div class="price-main">${unavailable ? "Call for price" : formatCurrency(finalPrice)}</div>
-          </td>
-          <td>
-            ${
-              unavailable
-                ? `<a href="tel:${CALL_NUMBER}" class="btn-book-table">Call Us</a>`
-                : `<button type="button" class="btn-book-table" data-index="${index}">Book</button>`
-            }
-          </td>
-        </tr>
-      `;
-    }).join("");
-
-    tariffTableBody.querySelectorAll(".btn-book-table[data-index]").forEach(button => {
-      button.addEventListener("click", function () {
-        const index = Number(this.dataset.index);
-        openBooking(index);
-      });
-    });
-  }
-
-  function renderCurrentView() {
-    const pkg = packageData[activePackage];
-    if (!pkg) return;
-
-    packageHeading.textContent = pkg.title;
-    packageSubheading.textContent = pkg.subtitle;
-
-    setActiveTabUI();
-    updateAccommodationVisibility();
-    updateHotelFieldState();
-    updateDynamicTitles();
-    renderTariffTable();
-    renderItinerary();
-    updateHash();
-  }
-
-  function populateDestinations(selectedDestination = null) {
-    const destinations = packageData[activePackage]?.destinations || {};
-    const destinationNames = Object.keys(destinations);
-
-    destinationSelect.innerHTML = destinationNames
-      .map(name => `<option value="${name}">${name}</option>`)
-      .join("");
-
-    if (selectedDestination && destinations[selectedDestination]) {
-      destinationSelect.value = selectedDestination;
-    } else {
-      destinationSelect.value = destinationNames[0] || "";
-    }
-
-    renderCurrentView();
-  }
-
-  function scrollToTariffOnMobile() {
-  if (window.innerWidth <= 991) {
-    const tariffSection = document.getElementById('tariffSection');
-    if (tariffSection) {
-      setTimeout(() => {
-        const navbarOffset = 90;
-        const top =
-          tariffSection.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
-
-        window.scrollTo({
-          top: top,
-          behavior: 'smooth'
-        });
-      }, 180);
-    }
-  }
-}
-
-document.querySelectorAll('.package-tab').forEach((tab) => {
-  tab.addEventListener('click', function () {
-    document.querySelectorAll('.package-tab').forEach((btn) => {
-      btn.classList.remove('active');
-    });
-
-    this.classList.add('active');
-
-    const selectedPackage = this.dataset.package;
-
-    // your existing package render/update code here
-
-    scrollToTariffOnMobile();
-  });
-});
-
-  function openBooking(index) {
-    const destinationName = destinationSelect.value;
-    const destinationData = getCurrentDestinationData();
-    const vehicle = destinationData?.vehicles?.[index];
-    if (!vehicle || vehicle.price == null) return;
-
-    const withHotel = accommodationSelect.value === "hotel";
-    const roomTypeLabel = roomTypeSelect.options[roomTypeSelect.selectedIndex]?.text || "";
-    const occupancyLabel = occupancySelect.options[occupancySelect.selectedIndex]?.text || "";
-    const roomCount = Number(roomCountSelect.value || 1);
-    const hotelCharge = getHotelCharge();
-    const finalTariff = Number(vehicle.price) + hotelCharge;
-
-    const kmLimit = destinationData.kmLimit || 0;
-    const packageCode = destinationData.packageCode || generatePackageCode(destinationName, kmLimit);
-
-    selectedBooking = {
-      packageTitle: packageData[activePackage].title,
-      destination: destinationName,
-      vehicle: vehicle.name,
-      tariff: finalTariff,
-      withHotel: withHotel,
-      roomType: withHotel ? roomTypeLabel : "Without Hotel",
-      occupancy: withHotel ? occupancyLabel : "",
-      roomCount: withHotel ? roomCount : 0,
-      hotelCharge: hotelCharge,
-      kmLimit: kmLimit,
-      packageCode: packageCode,
-      url: getCurrentHashUrl()
-    };
+    if (!bookingSummary || !bookingPopupForm) return;
 
     bookingSummary.innerHTML = `
-      <div><span>Package</span><span>${selectedBooking.packageTitle}</span></div>
-      <div><span>Destination</span><span>${selectedBooking.destination}</span></div>
-      <div><span>Vehicle</span><span>${selectedBooking.vehicle}</span></div>
-      <div><span>Stay</span><span>${selectedBooking.withHotel ? `${selectedBooking.roomType}, ${selectedBooking.occupancy}, ${selectedBooking.roomCount} Room${selectedBooking.roomCount > 1 ? "s" : ""}` : "Without Hotel"}</span></div>
-      <div><span>Total</span><span>${formatCurrency(selectedBooking.tariff)}</span></div>
+      <div><span>Package</span><span>${sanitizeText(selectedBooking.packageTitle)}</span></div>
+      <div><span>Destination</span><span>${sanitizeText(selectedBooking.destination)}</span></div>
+      <div><span>Vehicle</span><span>${sanitizeText(selectedBooking.vehicle)}</span></div>
+      <div><span>KM Limit</span><span>${sanitizeText(selectedBooking.kmLimit)} KM</span></div>
+      <div><span>Total Tariff</span><span>${formatCurrency(selectedBooking.tariff)}</span></div>
+      ${
+        selectedBooking.withHotel
+          ? `<div><span>Accommodation</span><span>${sanitizeText(selectedBooking.roomType)}, ${sanitizeText(selectedBooking.occupancy)}, ${selectedBooking.roomCount} Room${selectedBooking.roomCount > 1 ? "s" : ""}</span></div>`
+          : `<div><span>Accommodation</span><span>Without Hotel</span></div>`
+      }
     `;
 
     bookingPopupForm.reset();
     setMinDateTime();
+
     if (bookingModal) bookingModal.show();
   }
 
-  packageTabs.forEach(tab => {
-    tab.addEventListener("click", function () {
-      const pkg = this.dataset.package;
-      if (!packageData[pkg]) return;
-
-      activePackage = pkg;
-      populateDestinations();
-    });
-  });
-
-  destinationSelect.addEventListener("change", function () {
-    accommodationSelect.value = "none"; // reset to without hotel
-    renderCurrentView();
-  });
-
-  accommodationSelect.addEventListener("change", function () {
-    renderCurrentView();
-  });
-
-  roomTypeSelect.addEventListener("change", function () {
-    renderTariffTable();
-  });
-
-  occupancySelect.addEventListener("change", function () {
-    renderTariffTable();
-  });
-
-  roomCountSelect.addEventListener("change", function () {
-    renderTariffTable();
-  });
-
-  window.addEventListener("hashchange", function () {
-    const found = findByHash(window.location.hash);
-    if (!found) return;
-
-    activePackage = found.pkgKey;
-    populateDestinations(found.destinationName);
-    scrollToTariffOnMobile();
-  });
-
-  bookingPopupForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+  function validateCustomerForm() {
+    const name = document.getElementById("customerName")?.value.trim();
+    const phone = document.getElementById("customerPhone")?.value.trim();
+    const dateTime = document.getElementById("customerDateTime")?.value;
+    const pickup = document.getElementById("customerPickup")?.value.trim();
 
     if (!selectedBooking) {
       alert("Please select a package first.");
-      return;
+      return null;
     }
-
-    const name = document.getElementById("customerName").value.trim();
-    const phone = document.getElementById("customerPhone").value.trim();
-    const dateTime = document.getElementById("customerDateTime").value;
-    const pickup = document.getElementById("customerPickup").value.trim();
 
     if (!name || !phone || !dateTime || !pickup) {
       alert("Please fill all fields.");
-      return;
+      return null;
     }
 
     if (!/^[0-9]{10}$/.test(phone)) {
       alert("Please enter a valid 10-digit phone number.");
-      return;
+      return null;
     }
 
     const selectedDate = new Date(dateTime);
     if (selectedDate < new Date()) {
       alert("Old date and time cannot be selected.");
-      return;
+      return null;
     }
 
-    const formattedDateTime = formatDateTimeAMPM(dateTime);
+    return { name, phone, dateTime, pickup };
+  }
 
-    const accommodationText = selectedBooking.withHotel
-      ? `${selectedBooking.roomType}, ${selectedBooking.occupancy}, ${selectedBooking.roomCount} Room(s)`
-      : "Without Hotel";
+  async function postToAppsScript(action, payload) {
+    const response = await fetch(APPS_SCRIPT_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      body: JSON.stringify({ action, payload })
+    });
 
-      const message =
-      `Hello Bharathiyar Tours and Travels,
+    const text = await response.text();
+    let data = {};
 
-      I want to enquire about this tour package.
+    try {
+      data = JSON.parse(text);
+    } catch (e) {
+      throw new Error("Invalid server response");
+    }
 
-      Package: ${selectedBooking.packageTitle}
-      Destination: ${selectedBooking.destination}
-      Package Code: ${selectedBooking.packageCode}
-      KM Limit: ${selectedBooking.kmLimit} KM
-      Vehicle: ${selectedBooking.vehicle}
-      Accommodation: ${accommodationText}
-      Total Tariff: ${formatCurrency(selectedBooking.tariff)}
-      Page Link: ${selectedBooking.url}
+    if (data.status !== "success") {
+      throw new Error(data.message || "Request failed");
+    }
 
-      Customer Name: ${name}
-      Phone: ${phone}
-      Pickup Date & Time: ${formattedDateTime}
-      Pickup Location: ${pickup}`;
+    return data;
+  }
 
-    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
+  async function saveBookingToSheet(paymentTypeValue = "") {
+    if (!selectedBooking || !customerFormData) {
+      throw new Error("Booking data missing");
+    }
+
+    const payload = {
+      packageTitle: selectedBooking.packageTitle,
+      destination: selectedBooking.destination,
+      vehicle: selectedBooking.vehicle,
+      tariff: selectedBooking.tariff,
+      withHotel: selectedBooking.withHotel,
+      roomType: selectedBooking.roomType,
+      occupancy: selectedBooking.occupancy,
+      roomCount: selectedBooking.roomCount,
+      hotelCharge: selectedBooking.hotelCharge || 0,
+      kmLimit: selectedBooking.kmLimit || "",
+      packageCode: selectedBooking.packageCode || "",
+      customerName: customerFormData.name,
+      customerPhone: customerFormData.phone,
+      travelDate: formatDateTimeAMPM(customerFormData.dateTime),
+      pickup: customerFormData.pickup,
+      paymentType: paymentTypeValue,
+      sourcePage: window.location.href
+    };
+
+    const result = await postToAppsScript("saveBooking", payload);
+    savedBookingId = result.bookingId || "";
+    return result;
+  }
+
+  function getAdvanceConfig() {
+    const withHotel = !!selectedBooking?.withHotel;
+
+    if (withHotel) {
+      return {
+        type: "ADVANCE_50",
+        label: "Pay Advance 50%",
+        amount: Math.round(Number(selectedBooking.tariff || 0) * 0.50)
+      };
+    }
+
+    return {
+      type: "ADVANCE_10",
+      label: "Pay Advance 10%",
+      amount: Math.round(Number(selectedBooking.tariff || 0) * 0.10)
+    };
+  }
+
+  function fillPaymentSummary() {
+    if (!paymentSummaryBox || !selectedBooking) return;
+
+    const advance = getAdvanceConfig();
+    const total = Number(selectedBooking.tariff || 0);
+
+    paymentSummaryBox.innerHTML = `
+      <div><span>Booking ID</span><span>${sanitizeText(savedBookingId || "-")}</span></div>
+      <div><span>Package</span><span>${sanitizeText(selectedBooking.packageTitle)}</span></div>
+      <div><span>Destination</span><span>${sanitizeText(selectedBooking.destination)}</span></div>
+      <div><span>Vehicle</span><span>${sanitizeText(selectedBooking.vehicleName || selectedBooking.vehicle)}</span></div>
+      <div><span>Total Tariff</span><span>${formatCurrency(total)}</span></div>
+      <div><span>KM Limit</span><span>${sanitizeText(selectedBooking.kmLimit)} KM</span></div>
+      ${
+        selectedBooking.withHotel
+          ? `<div><span>Hotel Charge</span><span>${formatCurrency(selectedBooking.hotelCharge)}</span></div>`
+          : ``
+      }
+    `;
+
+    if (paymentOptionNote) {
+      paymentOptionNote.innerHTML = "";
+      paymentOptionNote.style.display = "none";
+    }
+
+    if (advancePaymentBtn) {
+      advancePaymentBtn.textContent = `${advance.label} - ${formatCurrency(advance.amount)}`;
+    }
+
+    if (fullPaymentBtn) {
+      fullPaymentBtn.textContent = `Pay Full - ${formatCurrency(total)}`;
+    }
+  }
+
+  function buildWhatsAppBookingMessage(data) {
+    const url =
+      window.location.href.split("#")[0] +
+      (getCurrentDestinationConfig()?.hash ? `#${getCurrentDestinationConfig().hash}` : "");
+
+    return `✨ *BHARATHIYAR TOURS & TRAVELS*
+  ━━━━━━━━━━━━━━━━━
+  📦 *PACKAGE DETAILS*
+  ━━━━━━━━━━━━━━━━━
+  📍 Destination: ${selectedBooking?.destination || ""}
+  🗺️ Package: ${selectedBooking?.packageTitle || ""}
+  🚘 Vehicle: ${selectedBooking?.vehicle || ""}
+  💰 Tariff: ${formatCurrency(selectedBooking?.tariff || 0)}
+  📏 KM Limit: ${selectedBooking?.kmLimit || ""} KM
+
+  🏨 *Accommodation:*
+  ${
+    selectedBooking?.withHotel
+      ? `✔ ${selectedBooking.roomType}
+  ✔ ${selectedBooking.occupancy}
+  ✔ ${selectedBooking.roomCount} Room${selectedBooking.roomCount > 1 ? "s" : ""}`
+      : "❌ Without Hotel"
+  }
+
+  ━━━━━━━━━━━━━━━━━
+  👤 *CUSTOMER DETAILS*
+  ━━━━━━━━━━━━━━━━━
+  🧑 Name: ${data?.name || ""}
+  📞 Phone: ${data?.phone || ""}
+  🗓️ Pickup: ${data?.dateTime ? formatDateTimeAMPM(data.dateTime) : ""}
+  📍 Location: ${data?.pickup || ""}
+
+  ━━━━━━━━━━━━━━━━━
+  🙏 Kindly confirm availability & pricing.
+  Thank you! 😊`;
+  }
+
+  function buildReceiptPayload(paymentInfo) {
+    const total = Number(selectedBooking?.tariff || 0);
+    const paid = Number(paymentInfo?.paidAmount || 0);
+
+    return {
+      receiptTitle: paymentInfo.paymentType === "FULL" ? "FULL PAYMENT RECEIPT" : "ADVANCE PAYMENT RECEIPT",
+      paymentStatus: paymentInfo.paymentType === "FULL" ? "FULL PAYMENT RECEIVED" : "ADVANCE RECEIVED",
+      quoteNo: savedBookingId,
+      date: new Date().toLocaleDateString("en-GB"),
+      customerName: customerFormData?.name,
+      customerPhone: customerFormData?.phone,
+      pickup: customerFormData?.pickup,
+      drop: selectedBooking?.destination,
+      vehicle: selectedBooking?.vehicle,
+      packageTitle: selectedBooking?.packageTitle,
+      packageCode: selectedBooking?.packageCode,
+      kmLimit: selectedBooking?.kmLimit,
+      travelDate: formatDateTimeAMPM(customerFormData?.dateTime),
+      totalTariff: total,
+      paidAmount: paid,
+      pendingAmount: total - paid,
+      paymentId: paymentInfo.paymentId,
+      paymentType: paymentInfo.paymentType,
+      terms: [
+        "Driver details will be assigned before journey.",
+        "Balance to be paid during trip.",
+        "Extra km will be charged.",
+        "Cancellation charges apply."
+      ]
+    };
+  }
+
+  function goToReceiptPage(paymentInfo) {
+    const data = buildReceiptPayload(paymentInfo);
+    sessionStorage.setItem("btt_receipt_data", JSON.stringify(data));
+    window.location.href = "receipt-success.html";
+  }
+
+  async function startPayment(paymentType) {
+    if (!selectedBooking || !customerFormData || !savedBookingId) {
+      throw new Error("Booking is incomplete");
+    }
+
+    const createOrderResult = await postToAppsScript("createOrder", {
+      bookingId: savedBookingId,
+      tariff: Number(selectedBooking.tariff || 0),
+      withHotel: !!selectedBooking.withHotel,
+      paymentType: paymentType
+    });
+
+    if (!createOrderResult.orderId) {
+      throw new Error("Failed to create order");
+    }
+
+    const options = {
+      key: createOrderResult.key,
+      amount: Number(createOrderResult.amount || 0) * 100,
+      currency: createOrderResult.currency || "INR",
+      name: "BHARATHIYAR TOURS AND TRAVELS",
+      description: `${paymentType === "FULL" ? "Full Payment" : "Advance Payment"} - ${selectedBooking.packageTitle}`,
+      order_id: createOrderResult.orderId,
+      handler: async function (response) {
+        try {
+          await postToAppsScript("verifyPayment", {
+            bookingId: savedBookingId,
+            razorpay_order_id: response.razorpay_order_id,
+            razorpay_payment_id: response.razorpay_payment_id,
+            razorpay_signature: response.razorpay_signature,
+            paymentType: paymentType,
+            amount: Number(createOrderResult.amount || 0)
+          });
+
+          if (paymentModal) paymentModal.hide();
+          if (bookingModal) bookingModal.hide();
+
+          goToReceiptPage({
+    paymentType: paymentType,
+    paymentId: response.razorpay_payment_id,
+    paidAmount: Number(createOrderResult.amount || 0)
   });
+        } catch (err) {
+          alert(err.message || "Payment verified, but final step failed.");
+        } finally {
+          resetPaymentButtons();
+        }
+      },
+      modal: {
+        ondismiss: function () {
+          resetPaymentButtons();
+        }
+      },
+      prefill: {
+        name: customerFormData?.name || "",
+        contact: customerFormData?.phone || ""
+      },
+      theme: {
+        color: "#111111"
+      }
+    };
+
+    const rzp = new Razorpay(options);
+
+    rzp.on("payment.failed", function (resp) {
+      resetPaymentButtons();
+      alert(resp?.error?.description || "Payment failed");
+    });
+
+    rzp.open();
+  }
+
+  function resetMainButtons() {
+    if (enquireWhatsappBtn) {
+      enquireWhatsappBtn.disabled = false;
+      enquireWhatsappBtn.innerHTML = `<i class="bi bi-whatsapp me-2"></i>Enquire on WhatsApp`;
+    }
+
+    if (bookNowZeroBtn) {
+      bookNowZeroBtn.disabled = false;
+      bookNowZeroBtn.textContent = "Book Now @ ₹0";
+    }
+
+    if (payOnlineBtn) {
+      payOnlineBtn.disabled = false;
+      payOnlineBtn.innerHTML = `<i class="bi bi-credit-card me-2"></i>Pay Online`;
+    }
+  }
+
+  function resetPaymentButtons() {
+    if (!advancePaymentBtn || !fullPaymentBtn) return;
+
+    advancePaymentBtn.disabled = false;
+    fullPaymentBtn.disabled = false;
+
+    const advance = getAdvanceConfig();
+    const total = Number(selectedBooking?.tariff || 0);
+
+    advancePaymentBtn.textContent = `${advance.label} - ${formatCurrency(advance.amount)}`;
+    fullPaymentBtn.textContent = `Pay Full - ${formatCurrency(total)}`;
+  }
+
+  if (bookingPopupForm) {
+    bookingPopupForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
+  }
+
+  if (enquireWhatsappBtn) {
+    enquireWhatsappBtn.addEventListener("click", async function () {
+      try {
+        customerFormData = validateCustomerForm();
+        if (!customerFormData) return;
+
+        enquireWhatsappBtn.disabled = true;
+        enquireWhatsappBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Please wait...`;
+
+        const message = buildWhatsAppBookingMessage(customerFormData);
+        const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+        window.open(whatsappUrl, "_blank");
+        showThankYouPopup();
+      } catch (err) {
+        alert(err.message || "Failed to continue to WhatsApp");
+      } finally {
+        resetMainButtons();
+      }
+    });
+  }
+
+  if (bookNowZeroBtn) {
+    bookNowZeroBtn.addEventListener("click", async function () {
+      try {
+        customerFormData = validateCustomerForm();
+        if (!customerFormData) return;
+
+        bookNowZeroBtn.disabled = true;
+        bookNowZeroBtn.textContent = "Please wait...";
+
+        await saveBookingToSheet("BOOK_NOW_ZERO");
+        showThankYouPopup();
+
+        if (bookingModal) bookingModal.hide();
+        if (bookingPopupForm) bookingPopupForm.reset();
+      } catch (err) {
+        alert(err.message || "Failed to save booking");
+      } finally {
+        resetMainButtons();
+      }
+    });
+  }
+
+  if (payOnlineBtn) {
+    payOnlineBtn.addEventListener("click", async function () {
+      try {
+        customerFormData = validateCustomerForm();
+        if (!customerFormData) return;
+
+        payOnlineBtn.disabled = true;
+        payOnlineBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Please wait...`;
+
+        await saveBookingToSheet("PAY_ONLINE");
+        fillPaymentSummary();
+
+        if (bookingModal) bookingModal.hide();
+        if (paymentModal) paymentModal.show();
+      } catch (err) {
+        alert(err.message || "Failed to continue to payment");
+      } finally {
+        resetMainButtons();
+      }
+    });
+  }
+
+  if (backToBookingBtn) {
+    backToBookingBtn.addEventListener("click", function () {
+      if (paymentModal) paymentModal.hide();
+      if (bookingModal) bookingModal.show();
+    });
+  }
+
+  if (advancePaymentBtn) {
+    advancePaymentBtn.addEventListener("click", async function () {
+      try {
+        advancePaymentBtn.disabled = true;
+        fullPaymentBtn.disabled = true;
+        advancePaymentBtn.textContent = "Please wait...";
+        await startPayment(getAdvanceConfig().type);
+      } catch (err) {
+        alert(err.message || "Unable to start payment");
+        resetPaymentButtons();
+      }
+    });
+  }
+
+  if (fullPaymentBtn) {
+    fullPaymentBtn.addEventListener("click", async function () {
+      try {
+        advancePaymentBtn.disabled = true;
+        fullPaymentBtn.disabled = true;
+        fullPaymentBtn.textContent = "Please wait...";
+        await startPayment("FULL");
+      } catch (err) {
+        alert(err.message || "Unable to start payment");
+        resetPaymentButtons();
+      }
+    });
+  }
 
   const phoneInput = document.getElementById("customerPhone");
   if (phoneInput) {
@@ -1506,36 +1874,136 @@ document.querySelectorAll('.package-tab').forEach((tab) => {
     });
   }
 
-  setMinDateTime();
-
-  if (accommodationSelect) accommodationSelect.value = "none";
-  if (roomTypeSelect) roomTypeSelect.value = "2star";
-  if (occupancySelect) occupancySelect.value = "double";
-  if (roomCountSelect) roomCountSelect.value = "1";
-
-  const foundHash = findByHash(window.location.hash);
-
-  if (foundHash) {
-    activePackage = foundHash.pkgKey;
-    populateDestinations(foundHash.destinationName);
-  } else {
-    activePackage = "1D";
-    populateDestinations("Isha + Marudhamalai");
+  function syncFloatingButtons(show) {
+    if (!floatingBtns) return;
+    floatingBtns.style.display = show ? "flex" : "none";
   }
-});
 
-// Floating button hide
-document.addEventListener("DOMContentLoaded", function () {
-  const bookingModalEl = document.getElementById("bookingModal");
-  const floatingBtns = document.getElementById("floatingBtns");
-
-  if (bookingModalEl && floatingBtns) {
-    bookingModalEl.addEventListener("show.bs.modal", function () {
-      floatingBtns.style.display = "none";
+  if (bookingModalEl) {
+    bookingModalEl.addEventListener("shown.bs.modal", function () {
+      document.body.classList.add("modal-open-custom");
+      syncFloatingButtons(false);
     });
 
     bookingModalEl.addEventListener("hidden.bs.modal", function () {
-      floatingBtns.style.display = "flex";
+      document.body.classList.remove("modal-open-custom");
+      if (!paymentModalEl || !paymentModalEl.classList.contains("show")) {
+        syncFloatingButtons(true);
+      }
     });
   }
+
+  if (paymentModalEl) {
+    paymentModalEl.addEventListener("shown.bs.modal", function () {
+      syncFloatingButtons(false);
+    });
+
+    paymentModalEl.addEventListener("hidden.bs.modal", function () {
+      if (!bookingModalEl || !bookingModalEl.classList.contains("show")) {
+        syncFloatingButtons(true);
+      }
+    });
+  }
+
+  function applyHashSelection() {
+    const found = findByHash(window.location.hash);
+    if (!found) return false;
+
+    activePackage = found.pkgKey;
+    selectedDestinationName = found.destinationName;
+
+    updateAccommodationVisibility();
+    updateHotelFields();
+    populateDestinations(selectedDestinationName);
+    renderTariffTable();
+    renderItinerary();
+    updatePageHeading();
+
+    setTimeout(() => {
+      const section = document.getElementById("tariffSection");
+      if (section) {
+        const y = section.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }, 80);
+
+    return true;
+  }
+
+  packageTabs.forEach(tab => {
+    tab.addEventListener("click", function () {
+      const pkg = this.dataset.package;
+      if (!packageData[pkg]) return;
+
+      activePackage = pkg;
+      selectedDestinationName = "";
+
+      updateAccommodationVisibility();
+      updateHotelFields();
+      populateDestinations();
+      renderTariffTable();
+      renderItinerary();
+      updatePageHeading();
+
+      if (packageTabsRow) {
+        this.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest"
+        });
+      }
+    });
+  });
+
+  if (accommodationSelect) {
+    accommodationSelect.addEventListener("change", function () {
+      updateAccommodationVisibility();
+      updateHotelFields();
+      renderTariffTable();
+    });
+  }
+
+  if (roomTypeSelect) {
+    roomTypeSelect.addEventListener("change", function () {
+      renderTariffTable();
+    });
+  }
+
+  if (occupancySelect) {
+    occupancySelect.addEventListener("change", function () {
+      renderTariffTable();
+    });
+  }
+
+  if (roomCountSelect) {
+    roomCountSelect.addEventListener("change", function () {
+      renderTariffTable();
+    });
+  }
+
+  if (scrollLeftBtn && packageTabsRow) {
+    scrollLeftBtn.addEventListener("click", function () {
+      packageTabsRow.scrollBy({ left: -220, behavior: "smooth" });
+    });
+  }
+
+  if (scrollRightBtn && packageTabsRow) {
+    scrollRightBtn.addEventListener("click", function () {
+      packageTabsRow.scrollBy({ left: 220, behavior: "smooth" });
+    });
+  }
+
+  updateAccommodationVisibility();
+  updateHotelFields();
+
+  if (!applyHashSelection()) {
+    populateDestinations();
+    renderTariffTable();
+    renderItinerary();
+    updatePageHeading();
+  }
+
+  window.addEventListener("hashchange", function () {
+    applyHashSelection();
+  });
 });
